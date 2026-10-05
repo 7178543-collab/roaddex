@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>RoadDex Prototype · Update 12.1</title>
+<title>RoadDex Prototype · Update 13</title>
 <style>
 :root{--bg:#0a0e0d;--panel:#131a17;--panel2:#1b2520;--text:#f3f7f4;--muted:#91a097;--accent:#b7f542;--line:#28352e;--danger:#ff726f}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.app{max-width:520px;margin:0 auto;min-height:100vh;padding:env(safe-area-inset-top) 18px calc(30px + env(safe-area-inset-bottom))}.top{padding:32px 0 18px}.logo{font-size:38px;font-weight:1000;letter-spacing:3px}.tag{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:2px}.version{font-size:10px;color:var(--muted);font-weight:900;letter-spacing:1.4px;margin-top:7px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.label{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px}.big{font-size:29px;font-weight:1000}.btn{width:100%;border:0;border-radius:14px;background:var(--accent);color:#0b120e;padding:15px;font-weight:1000;font-size:15px;letter-spacing:.4px;margin:6px 0;cursor:pointer}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.danger{background:transparent;color:var(--danger);border:1px solid #623432}.section{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1.4px;margin:22px 0 9px}.muted{color:var(--muted);line-height:1.45}.pill{display:inline-block;background:var(--panel2);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:10px;font-weight:900;text-transform:uppercase}.row{display:flex;gap:12px;align-items:center}.grow{flex:1;min-width:0}.car{font-size:17px;font-weight:900}.title{font-size:27px;font-weight:1000;margin:8px 0}.input{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:16px}.back{background:none;border:0;color:var(--muted);font-weight:900;padding:16px 0 2px;font-size:14px}.context.selected{border-color:var(--accent);background:#172019}.photo{height:260px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px}.photo img{width:100%;height:100%;object-fit:cover}.photo .glyph{font-size:70px;color:var(--accent)}.dexrow.missing{opacity:.5}.thumb{width:52px;height:52px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;color:var(--accent);font-weight:1000;overflow:hidden;flex:0 0 52px}.thumb img{width:100%;height:100%;object-fit:cover}.histphoto{width:72px;height:72px;border-radius:12px;object-fit:cover;border:1px solid var(--line);flex:0 0 72px}.maker{color:var(--accent);font-size:13px;font-weight:1000;letter-spacing:1px;margin:18px 0 8px}.hero{text-align:center;padding:34px 0}.hero .eyebrow{color:var(--accent);font-weight:1000;letter-spacing:3px}.hero h1{font-size:38px;margin:12px 0 4px}.xp{font-size:25px;color:var(--accent);font-weight:1000;margin:20px}.choice{cursor:pointer}.chip{display:inline-block;background:var(--panel);border:1px solid var(--line);padding:9px 12px;border-radius:999px;margin:4px;color:var(--text);font-weight:800;cursor:pointer}.chip.on{border-color:var(--accent);background:#192319}.notice{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-size:13px}.hidden{display:none!important}.photoStrip{display:flex;gap:9px;overflow-x:auto;padding:2px 0 10px}.photoMini{width:82px;height:82px;border-radius:14px;border:2px solid var(--line);overflow:hidden;position:relative;flex:0 0 82px;background:var(--panel2)}.photoMini.cover{border-color:var(--accent)}.photoMini img{width:100%;height:100%;object-fit:cover}.photoMini .num{position:absolute;bottom:4px;left:4px;background:#000b;color:#fff;border-radius:8px;padding:2px 6px;font-size:10px;font-weight:900}.focusPreview{height:360px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.focusPreview img{width:100%;height:100%;object-fit:cover}.arrowGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;max-width:280px;margin:14px auto}.arrowGrid button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:13px;font-size:20px}.zoomControls{display:grid;grid-template-columns:54px 1fr 54px;gap:10px;align-items:center;margin:14px 0}.zoomControls button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px;font-size:22px;font-weight:900}.zoomControls input[type=range]{width:100%;accent-color:var(--accent)}.zoomReadout{text-align:center;color:var(--accent);font-size:12px;font-weight:1000;letter-spacing:1px;margin-top:-6px}.focusPreview img,.photo img,.thumb img,.photoMini img,.galleryItem img{will-change:transform}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.toolbar .chip{margin:0}.searchRow{display:flex;gap:8px;align-items:center}.dexSearch{margin-top:14px;background:#101713;border:2px solid var(--accent);border-radius:18px;padding:12px}.dexSearch .input{border:0;background:#0c120f;padding:13px 14px}.dexSearchLabel{color:var(--accent);font-size:11px;font-weight:1000;letter-spacing:1.4px;margin:0 0 8px 2px}.small{font-size:12px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px}.galleryItem{position:relative;height:170px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.galleryItem img{width:100%;height:100%;object-fit:cover}.galleryItem .badge{position:absolute;left:8px;bottom:8px;background:#000c;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:900}.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unknown{color:#ffd36c}.dataTools{display:flex;gap:8px;margin-top:22px}.dataTools>*{flex:1}.floatingSave{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));width:min(484px,calc(100% - 36px));z-index:60;padding:8px;background:rgba(10,14,13,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px #0008;backdrop-filter:blur(10px)}.floatingSave .btn{margin:0}.editPad{padding-bottom:92px}
@@ -13,7 +13,7 @@
 <body><main id="app" class="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const UPDATE = '12.1';
+const UPDATE = '13';
 const STORAGE_KEY = 'roaddex-demo';
 const LEGACY_MIGRATION_KEY = 'roaddex-v10-migrated';
 const SUPABASE_URL = 'https://eixtfpkzipdshzpotzsy.supabase.co';
@@ -154,28 +154,69 @@ function searchCars(q,list=cars){
   }).filter(x=>x.score>=.28).sort((a,b)=>b.score-a.score||a.c.make.localeCompare(b.c.make)||a.c.model.localeCompare(b.c.model)).map(x=>x.c);
 }
 let vehicleSearchSerial=0;
+let vehicleSearchTimer=null;
 function upsertSearchCar(r){
+  if(!r?.catalog_key)return null;
   let c=car(r.catalog_key);
   if(c)return c;
   c={id:r.catalog_key,make:r.make,model:r.model,gen:r.generation,years:r.display_years||'',rarity:r.rarity_seed||'Unrated',variants:Array.isArray(r.variants)?r.variants:[]};
   cars.push(c); cars.sort((a,b)=>a.make.localeCompare(b.make)||a.model.localeCompare(b.model)||a.gen.localeCompare(b.gen)); return c;
 }
-async function fillCloudCarSearch(q,targetId,clickFn){
-  const el=document.getElementById(targetId); if(!el)return;
-  const z=(q||'').trim(), token=++vehicleSearchSerial;
-  if(!z){el.innerHTML='';return;}
-  el.innerHTML='<div class="card"><div class="muted">Searching global catalogue…</div></div>';
-  try{
-    const {data,error}=await sb.rpc('search_vehicle_catalogue',{search_query:z,result_limit:20});
-    if(error)throw error;if(token!==vehicleSearchSerial)return;
-    const list=(data||[]).map(upsertSearchCar);
-    el.innerHTML=list.length?carList(list,clickFn):'<div class="card"><div class="car">No catalogue match.</div><div class="muted">Try less detail, a chassis code, or the missing-catalogue path.</div></div>';
-  }catch(err){
-    console.warn('Catalogue search RPC failed; using cached fallback.',err);
-    if(token!==vehicleSearchSerial)return;
-    const list=searchCars(z).slice(0,20);
-    el.innerHTML=list.length?carList(list,clickFn):'<div class="card"><div class="car">No catalogue match.</div></div>';
+function searchAttribution(){return '<div class="muted small" style="margin:10px 2px 0">Global make/model data by <a href="https://vehiclesdb.com" target="_blank" rel="noopener" style="color:var(--accent)">VehiclesDB</a>. RoadDex generation matches are curated separately.</div>';}
+function searchResultCard(r,mode){
+  const make=escapeHtml(r.make||''), model=escapeHtml(r.model||''), gen=escapeHtml(r.generation||''), years=escapeHtml(r.display_years||''), body=escapeHtml(r.body_type||'');
+  if(r.match_type==='GENERATION'&&r.catalog_key){
+    upsertSearchCar(r);
+    return '<div class="card row choice" onclick="chooseVehicleSearchGeneration('+JSON.stringify(r.catalog_key).replaceAll('"','&quot;')+','+JSON.stringify(mode).replaceAll('"','&quot;')+')"><div class="grow"><div class="car">'+make+' '+model+'</div><div class="muted">'+gen+(years?' · '+years:'')+'</div><div class="communityOwner">DEX GENERATION</div></div><div style="color:var(--accent);font-size:28px">›</div></div>';
   }
+  if(r.match_type==='MODEL'){
+    return '<div class="card row choice" onclick="chooseVehicleSearchPartial('+JSON.stringify(r.make||'').replaceAll('"','&quot;')+','+JSON.stringify(r.model||'').replaceAll('"','&quot;')+','+JSON.stringify(mode).replaceAll('"','&quot;')+')"><div class="grow"><div class="car">'+make+' '+model+'</div><div class="muted">'+(body?body+' · ':'')+'Generation not selected</div><div class="communityOwner">MODEL MATCH · NEEDS REFINEMENT</div></div><div style="color:var(--accent);font-size:28px">›</div></div>';
+  }
+  return '<div class="card row choice" onclick="chooseVehicleSearchPartial('+JSON.stringify(r.make||'').replaceAll('"','&quot;')+',\'\','+JSON.stringify(mode).replaceAll('"','&quot;')+')"><div class="grow"><div class="car">'+make+'</div><div class="muted">Model unknown</div><div class="communityOwner">MAKE MATCH · NEEDS REFINEMENT</div></div><div style="color:var(--accent);font-size:28px">›</div></div>';
+}
+function renderVehicleSearchResults(rows,mode){
+  if(!rows?.length)return '<div class="card"><div class="car">No useful match.</div><div class="muted">Try fewer words, a nickname/chassis code, or save only what you know.</div></div>'+searchAttribution();
+  const exact=rows.filter(r=>r.match_type==='GENERATION');
+  const model=rows.filter(r=>r.match_type==='MODEL');
+  const make=rows.filter(r=>r.match_type==='MAKE');
+  let out='';
+  if(exact.length)out+='<div class="section">ROADDEX GENERATIONS · '+exact.length+'</div>'+exact.map(r=>searchResultCard(r,mode)).join('');
+  if(model.length)out+='<div class="section">GLOBAL MODEL MATCHES · '+model.length+'</div>'+model.map(r=>searchResultCard(r,mode)).join('');
+  if(make.length)out+='<div class="section">MAKE ONLY</div>'+make.map(r=>searchResultCard(r,mode)).join('');
+  return out+searchAttribution();
+}
+function queueVehicleSearch(q,targetId,mode){
+  clearTimeout(vehicleSearchTimer);
+  const el=document.getElementById(targetId);if(!el)return;
+  const z=(q||'').trim();
+  if(!z){el.innerHTML='';return;}
+  el.innerHTML='<div class="card"><div class="muted">Searching 5,500+ global car models…</div></div>';
+  vehicleSearchTimer=setTimeout(()=>runVehicleSearch(z,targetId,mode),180);
+}
+async function runVehicleSearch(q,targetId,mode){
+  const el=document.getElementById(targetId);if(!el)return;
+  const token=++vehicleSearchSerial;
+  try{
+    const {data,error}=await sb.rpc('search_vehicle_identity',{search_query:q,result_limit:24});
+    if(error)throw error;if(token!==vehicleSearchSerial)return;
+    el.innerHTML=renderVehicleSearchResults(data||[],mode);
+  }catch(err){
+    console.warn('Global vehicle search failed; using curated fallback.',err);
+    if(token!==vehicleSearchSerial)return;
+    const fallback=searchCars(q).slice(0,15).map(c=>({match_type:'GENERATION',catalog_key:c.id,make:c.make,model:c.model,generation:c.gen,display_years:c.years,rarity_seed:c.rarity,variants:c.variants}));
+    el.innerHTML=renderVehicleSearchResults(fallback,mode);
+  }
+}
+function chooseVehicleSearchGeneration(id,mode){
+  if(mode==='capture'){selected=id;variant='';partialMake='';partialModel='';identityQuery='';render();return;}
+  if(mode==='edit'){editDraft.car=id;editDraft.partial=null;editDraft.unknown=false;editDraft.variant='';editQuery='';render();window.scrollTo({top:0,behavior:'smooth'});return;}
+  if(mode==='proposal'){proposalCarId=id;proposalVariant='';proposalPartialMake='';proposalPartialModel='';proposalQuery='';render();return;}
+}
+function chooseVehicleSearchPartial(make,model,mode){
+  make=(make||'').trim();model=(model||'').trim();
+  if(mode==='capture'){selected=null;variant='';partialMake=make;partialModel=model;identityQuery='';render();return;}
+  if(mode==='edit'){editDraft.car=null;editDraft.variant='';editDraft.partial=make?{make,model}:null;editDraft.unknown=!make;editQuery='';render();window.scrollTo({top:0,behavior:'smooth'});return;}
+  if(mode==='proposal'){proposalCarId=null;proposalVariant='';proposalPartialMake=make;proposalPartialModel=model;proposalQuery='';render();return;}
 }
 const app = document.getElementById('app');
 const car = id => cars.find(c => c.id === id);
@@ -209,6 +250,8 @@ let photoEdit = null;
 let dexQuery = '';
 let dexMode = 'ALL';
 let identifyMode = null;
+let identityQuery = '';
+let editQuery = '';
 let partialMake = '';
 let partialModel = '';
 let sightingTags = [];
@@ -262,7 +305,7 @@ function home(){
     '<div class="section">RECENT SIGHTINGS</div>'+(recent || '<div class="card"><div class="car">Nothing spotted yet.</div><div class="muted">The automotive wilderness remains tragically unharvested.</div></div>')+
     '<div class="dataTools"><button class="btn secondary small" onclick="exportData()">EXPORT BACKUP</button><button class="btn secondary small" onclick="signOutCloud()">SIGN OUT</button></div>';
 }
-function startCapture(){ capture={photos:[],coverIndex:0,context:'WILD'}; selected=null; variant=''; identifyMode=null; partialMake=''; partialModel=''; sightingTags=[]; multiCarCount=0; nav('capture'); }
+function startCapture(){ capture={photos:[],coverIndex:0,context:'WILD'}; selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; sightingTags=[]; multiCarCount=0; nav('capture'); }
 function startBatchUnknown(){ batchUnknown={photos:[],context:'WILD'}; nav('batchunknown'); }
 function setBatchContext(x){ batchUnknown.context=x; render(); }
 const contexts = [
@@ -376,7 +419,7 @@ function photoEditScreen(){
     '<button class="btn '+(isCover?'secondary':'')+'" onclick="setAsCover()">'+(isCover?'CURRENT COVER':'MAKE COVER PHOTO')+'</button><button class="btn danger" onclick="removeEditedPhoto()">REMOVE THIS PHOTO</button><button class="btn secondary" onclick="nav(\''+returnTarget+'\')">DONE</button>';
 }
 function chooseCar(id){ selected=id; variant=''; render(); }
-function filterCars(q){ return fillCloudCarSearch(q,'carlist','chooseCar'); }
+function filterCars(q){ identityQuery=q; return queueVehicleSearch(q,'carlist','capture'); }
 function carList(list, clickFn='chooseCar'){ return '<div class="section">'+list.length+' DEX ENTRIES</div>'+list.map(c=>'<div class="card row choice" onclick="'+clickFn+'(\''+c.id+'\')"><div class="grow"><div class="car">'+c.make+' '+c.model+'</div><div class="muted">'+c.gen+' · '+c.years+'</div></div><div style="color:var(--accent);font-size:30px">›</div></div>').join(''); }
 function setVariant(v){ variant=v; render(); }
 function toggleTag(t){ sightingTags=sightingTags.includes(t)?sightingTags.filter(x=>x!==t):[...sightingTags,t]; render(); }
@@ -395,8 +438,7 @@ function partialModels(make){ return [...new Set(cars.filter(c=>c.make===make).m
 function setPartialMake(v){ partialMake=v; partialModel=''; render(); }
 function setPartialModel(v){ partialModel=v; render(); }
 function partialPicker(){
-  const makes=partialMakes(); const models=partialMake?partialModels(partialMake):[];
-  return '<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><select class="input" onchange="setPartialMake(this.value)"><option value="">Choose make…</option>'+makes.map(m=>'<option '+(partialMake===m?'selected':'')+'>'+m+'</option>').join('')+'</select>'+(partialMake?'<div class="label" style="margin-top:12px">MODEL · OPTIONAL</div><select class="input" onchange="setPartialModel(this.value)"><option value="">I only know it is a '+partialMake+'</option>'+models.map(m=>'<option '+(partialModel===m?'selected':'')+'>'+m+'</option>').join('')+'</select>':'')+(partialMake?'<div class="section">SAVE SIGHTING</div><button class="btn" onclick="submitPartial(true)">SAVE + ADD ANOTHER CAR FROM THIS PHOTO</button><button class="btn secondary" onclick="submitPartial(false)">SAVE & FINISH</button>':'')+'<div class="muted small">Submit only what you are confident about. The community can refine it later.</div></div>';
+  return '<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(partialMake)+'" placeholder="e.g. Toyota" oninput="partialMake=this.value"><div class="label" style="margin-top:12px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(partialModel)+'" placeholder="Leave blank if you do not know" oninput="partialModel=this.value"><div class="section">SAVE PARTIAL ID</div><button class="btn" onclick="submitPartial(true)">SAVE + ADD ANOTHER CAR FROM THIS PHOTO</button><button class="btn secondary" onclick="submitPartial(false)">SAVE & FINISH</button><div class="muted small">Make-only is valid. Submit only what you are confident about. The community can refine it later.</div></div>';
 }
 function identifyPhotoPanel(){
   if(!capture.photos.length)return '';
@@ -409,14 +451,14 @@ function identify(){
   if(!identifyMode) return head+'<div class="card choice" onclick="chooseKnow()"><div class="car">I KNOW</div><div class="muted">Search the Dex or submit only the make/model you know.</div></div><div class="card choice" onclick="chooseDontKnow()"><div class="car unknown">I DON’T KNOW</div><div class="muted">Save it for community identification. No guessing required.</div></div>';
   if(identifyMode==='UNKNOWN') return head+'<div class="card selected"><div class="car unknown">Unknown vehicle</div><div class="muted">This car will go to the Identification Board.</div></div><div class="section">SAVE SIGHTING</div><button class="btn" onclick="submitUnknown(true)">SAVE + ADD ANOTHER CAR FROM THIS PHOTO</button><button class="btn secondary" onclick="submitUnknown(false)">SAVE & FINISH</button><button class="btn secondary" onclick="identifyMode=null;render()">← BACK</button>';
   if(selected) return head+selectedCard();
-  return head+'<button class="btn secondary" onclick="identifyMode=null;render()">← I DON’T ACTUALLY KNOW</button><div class="section">SEARCH THE GLOBAL CATALOGUE</div><input class="input" placeholder="Search model, chassis, nickname, even a typo…" oninput="filterCars(this.value)"><div class="muted small" style="margin-top:7px">Results stay collapsed until you type. Try: Honda AZ1, cappucino, N50, mk3 supra, W201, GC8.</div><div id="carlist"></div><button class="btn secondary" onclick="identifyMode=\'UNKNOWN\';render()">NOT IN CATALOGUE / CAN’T FIND IT</button><div class="muted small">Save it unresolved rather than forcing a bad ID. It can be flagged for catalogue addition from the Identification Board.</div>'+partialPicker();
+  return head+'<button class="btn secondary" onclick="identifyMode=null;render()">← I DON’T ACTUALLY KNOW</button><div class="section">SEARCH VEHICLES</div><input class="input" value="'+escapeHtml(identityQuery)+'" placeholder="Try Civic, Camry, Honda Civic, W201, foxbody…" oninput="filterCars(this.value)"><div class="muted small" style="margin-top:7px">This searches the global model index and the RoadDex generation catalogue. Model-only matches are valid and stay Needs Refinement.</div><div id="carlist"></div><button class="btn secondary" onclick="identifyMode=\'UNKNOWN\';render()">I STILL CAN’T FIND IT</button><div class="muted small">Save it unresolved rather than forcing a bad ID.</div>'+partialPicker();
 }
 function sourceSummary(photos){ const s=[...new Set(photos.map(p=>p.source).filter(Boolean))]; return s.length===1?s[0]:(s.length?'MIXED':'CAMERA'); }
 function makeSighting(carId,unknownFlag,partial=null){
   const isNew = capture.context==='WILD' && carId && !wildIds().has(carId);
   return {id:crypto.randomUUID(),car:carId||null,partial:partial||null,unknown:!!unknownFlag,identityStatus:carId?'IDENTIFIED':(partial?'PARTIAL':'UNKNOWN'),variant:(unknownFlag||partial)?'':variant,tags:[...sightingTags],context:capture.context,source:sourceSummary(capture.photos),photos:deepClone(capture.photos.filter(p=>p.data)),coverIndex:Math.min(capture.coverIndex,Math.max(capture.photos.filter(p=>p.data).length-1,0)),at:new Date().toISOString(),isNew};
 }
-function resetIdentityFields(){ selected=null; variant=''; identifyMode=null; partialMake=''; partialModel=''; sightingTags=[]; }
+function resetIdentityFields(){ selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; sightingTags=[]; }
 async function finishSubmit(s,addAnother=false){
   if(cloudBusy)return;
   const savedCapture={photos:deepClone(capture.photos),coverIndex:capture.coverIndex,context:capture.context};
@@ -505,11 +547,11 @@ function proposalCard(p,s){
   return '<div class="card"><div class="row"><div class="grow"><div class="car">'+(c?escapeHtml(c.make+' '+c.model):escapeHtml(partialLabel||'Partial identification'))+'</div><div class="muted">'+(c?escapeHtml(c.gen+' · '+c.years):'PARTIAL ID · still needs refinement')+(p.variantName?' · '+escapeHtml(p.variantName):'')+'</div><div class="communityOwner">PROPOSED BY '+escapeHtml(p.proposerName)+'</div></div>'+status+'</div>'+(p.comment?'<div class="muted" style="margin-top:10px">'+escapeHtml(p.comment)+'</div>':'')+actions+'</div>';
 }
 function proposalSearchHtml(){
-  const results=searchCars(proposalQuery).slice(0,12);
-  if(proposalCarId){const c=car(proposalCarId);return '<div class="card selected"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div></div>'+(c.variants.length?'<div class="section">NOTABLE VARIANT · OPTIONAL</div><select class="input" onchange="proposalVariant=this.value;render()"><option value="">Generation only</option>'+c.variants.map(v=>'<option '+(proposalVariant===v?'selected':'')+'>'+escapeHtml(v)+'</option>').join('')+'</select>':'')+'<button class="btn" onclick="submitIdentificationProposal()">SUBMIT THIS ID</button><button class="btn secondary" onclick="proposalCarId=null;proposalVariant=\'\';render()">CHOOSE DIFFERENT VEHICLE</button>';
+  if(proposalCarId){const c=car(proposalCarId);return '<div class="card selected"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div><div class="communityOwner">DEX GENERATION</div></div>'+(c.variants.length?'<div class="section">NOTABLE VARIANT · OPTIONAL</div><select class="input" onchange="proposalVariant=this.value;render()"><option value="">Generation only</option>'+c.variants.map(v=>'<option '+(proposalVariant===v?'selected':'')+'>'+escapeHtml(v)+'</option>').join('')+'</select>':'')+'<button class="btn" onclick="submitIdentificationProposal()">SUBMIT THIS ID</button><button class="btn secondary" onclick="proposalCarId=null;proposalVariant=\'\';proposalQuery=\'\';render()">CHOOSE DIFFERENT VEHICLE</button>';
   }
-  const partial='<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(proposalPartialMake)+'" placeholder="e.g. Toyota" oninput="proposalPartialMake=this.value"><div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(proposalPartialModel)+'" placeholder="Leave blank if you do not know" oninput="proposalPartialModel=this.value"><button class="btn secondary" onclick="submitPartialIdentificationProposal()">PROPOSE PARTIAL ID</button><div class="muted small">Make-only is valid. Toyota is better than Unknown. The sighting stays on the board for further refinement.</div></div>';
-  return '<input class="input" value="'+escapeHtml(proposalQuery)+'" placeholder="Search make, model, chassis code…" oninput="proposalQuery=this.value;render()"><div style="margin-top:10px">'+(proposalQuery?results.map(c=>'<div class="card choice" onclick="proposalCarId=\''+c.id+'\';proposalVariant=\'\';render()"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div></div>').join(''):'<div class="muted small">Try W201, A70, GC8, RX-7, Civic, etc.</div>')+'</div>'+partial;
+  const selectedPartial=proposalPartialMake?'<div class="card selected"><div class="car">'+escapeHtml(proposalPartialMake+(proposalPartialModel?' '+proposalPartialModel:''))+'</div><div class="muted">Partial identification · stays Needs Refinement</div><div class="communityOwner">PARTIAL ID</div></div>':'';
+  const partial='<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(proposalPartialMake)+'" placeholder="e.g. Toyota" oninput="proposalPartialMake=this.value"><div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(proposalPartialModel)+'" placeholder="Leave blank if you do not know" oninput="proposalPartialModel=this.value"><button class="btn secondary" onclick="submitPartialIdentificationProposal()">PROPOSE PARTIAL ID</button><div class="muted small">Make-only is valid. Do not guess the rest.</div></div>';
+  return selectedPartial+'<input class="input" value="'+escapeHtml(proposalQuery)+'" placeholder="Search any make, model, chassis code, nickname…" oninput="proposalQuery=this.value;queueVehicleSearch(this.value,\'proposalSearchResults\',\'proposal\')"><div id="proposalSearchResults" style="margin-top:10px"></div>'+partial;
 }
 function communitySighting(){
   const s=cloudBoard.find(x=>x.id===boardSightingId);
@@ -566,7 +608,7 @@ async function addSightingPhotos(e){
     s.source=sourceSummary(s.photos); await sb.from('sightings').update({source:s.source}).eq('id',s.id); save();
   }catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
-function beginEditSighting(){ const s=state.sightings.find(x=>x.id===selectedSighting); if(!s)return; editDraft={car:s.car,partial:s.partial||null,unknown:!s.car&&!s.partial,variant:s.variant||'',context:s.context}; screen='editSighting'; render(); window.scrollTo(0,0); }
+function beginEditSighting(){ const s=state.sightings.find(x=>x.id===selectedSighting); if(!s)return; editQuery=''; editDraft={car:s.car,partial:s.partial||null,unknown:!s.car&&!s.partial,variant:s.variant||'',context:s.context}; screen='editSighting'; render(); window.scrollTo(0,0); }
 function addAnotherFromSighting(){
   const s=state.sightings.find(x=>x.id===selectedSighting);
   if(!s)return;
@@ -606,9 +648,9 @@ function editSightingScreen(){
   if(editDraft.car){ const c=car(editDraft.car); identity='<div class="card selected"><div class="car">'+c.make+' '+c.model+'</div><div class="muted">'+c.gen+' · '+c.years+'</div></div>'; if(c.variants.length) identity+='<div class="section">VARIANT</div><div><span class="chip '+(!editDraft.variant?'on':'')+'" onclick="editSetVariant(\'\')">Not sure</span>'+c.variants.map(v=>'<span class="chip '+(editDraft.variant===v?'on':'')+'" onclick="editSetVariant('+JSON.stringify(v).replaceAll('"','&quot;')+')">'+v+'</span>').join('')+'</div>'; }
   else if(editDraft.partial) identity='<div class="card"><div class="car unknown">'+editDraft.partial.make+(editDraft.partial.model?' '+editDraft.partial.model:'')+'</div><div class="muted">Partial ID · choose a full Dex entry below when you know it.</div></div>'; else identity='<div class="card"><div class="car unknown">Unknown vehicle</div><div class="muted">Not currently attached to a Dex entry.</div></div>';
   const partialEdit='<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(editDraft.partial?.make||'')+'" placeholder="e.g. Toyota" oninput="editSetPartialMake(this.value)"><div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(editDraft.partial?.model||'')+'" placeholder="Leave blank if you do not know" oninput="editSetPartialModel(this.value)"><div class="muted small" style="margin-top:8px">Make-only is a valid refinement. It will stay marked Needs Refinement.</div></div>';
-  return '<div class="editPad">'+back('EDIT SIGHTING','sighting')+'<div class="title">Correct sighting</div>'+identity+'<div class="notice" style="margin:10px 0 4px">Choose the best identity you can support. Do not guess the rest.</div><div class="section">CHANGE IDENTITY</div><input class="input" placeholder="Search exact vehicle…" oninput="editFilterCars(this.value)"><div class="muted small" style="margin-top:7px">Catalogue results stay collapsed until you type.</div><div id="editcarlist"></div>'+partialEdit+'<button class="btn secondary" onclick="editMarkUnknown()">MARK AS UNKNOWN</button><div class="section">CONTEXT</div>'+contexts.map(x=>contextCard(x,editDraft.context,'editSetContext')).join('')+'<button class="btn danger" onclick="deleteSighting()">DELETE SIGHTING</button></div><div class="floatingSave"><button class="btn" onclick="saveEditSighting()">SAVE CORRECTION</button></div>';
+  return '<div class="editPad">'+back('EDIT SIGHTING','sighting')+'<div class="title">Correct sighting</div>'+identity+'<div class="notice" style="margin:10px 0 4px">Choose the best identity you can support. Do not guess the rest.</div><div class="section">SEARCH VEHICLES</div><input class="input" value="'+escapeHtml(editQuery)+'" placeholder="Search make, model, chassis code…" oninput="editFilterCars(this.value)"><div class="muted small" style="margin-top:7px">Searches 5,500+ global car models plus RoadDex generation entries.</div><div id="editcarlist"></div>'+partialEdit+'<button class="btn secondary" onclick="editMarkUnknown()">MARK AS UNKNOWN</button><div class="section">CONTEXT</div>'+contexts.map(x=>contextCard(x,editDraft.context,'editSetContext')).join('')+'<button class="btn danger" onclick="deleteSighting()">DELETE SIGHTING</button></div><div class="floatingSave"><button class="btn" onclick="saveEditSighting()">SAVE CORRECTION</button></div>';
 }
-function editFilterCars(q){ return fillCloudCarSearch(q,'editcarlist','editChooseCar'); }
+function editFilterCars(q){ editQuery=q; return queueVehicleSearch(q,'editcarlist','edit'); }
 function sighting(){
   const s=state.sightings.find(x=>x.id===selectedSighting); if(!s)return back('SIGHTING')+'<div class="title">Sighting not found</div>';
   const c=s.car?car(s.car):null;
