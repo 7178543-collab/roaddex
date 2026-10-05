@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>RoadDex Prototype · Update 13</title>
+<title>RoadDex Prototype · Update 14</title>
 <style>
 :root{--bg:#0a0e0d;--panel:#131a17;--panel2:#1b2520;--text:#f3f7f4;--muted:#91a097;--accent:#b7f542;--line:#28352e;--danger:#ff726f}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.app{max-width:520px;margin:0 auto;min-height:100vh;padding:env(safe-area-inset-top) 18px calc(30px + env(safe-area-inset-bottom))}.top{padding:32px 0 18px}.logo{font-size:38px;font-weight:1000;letter-spacing:3px}.tag{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:2px}.version{font-size:10px;color:var(--muted);font-weight:900;letter-spacing:1.4px;margin-top:7px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.label{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px}.big{font-size:29px;font-weight:1000}.btn{width:100%;border:0;border-radius:14px;background:var(--accent);color:#0b120e;padding:15px;font-weight:1000;font-size:15px;letter-spacing:.4px;margin:6px 0;cursor:pointer}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.danger{background:transparent;color:var(--danger);border:1px solid #623432}.section{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1.4px;margin:22px 0 9px}.muted{color:var(--muted);line-height:1.45}.pill{display:inline-block;background:var(--panel2);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:10px;font-weight:900;text-transform:uppercase}.row{display:flex;gap:12px;align-items:center}.grow{flex:1;min-width:0}.car{font-size:17px;font-weight:900}.title{font-size:27px;font-weight:1000;margin:8px 0}.input{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:16px}.back{background:none;border:0;color:var(--muted);font-weight:900;padding:16px 0 2px;font-size:14px}.context.selected{border-color:var(--accent);background:#172019}.photo{height:260px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px}.photo img{width:100%;height:100%;object-fit:cover}.photo .glyph{font-size:70px;color:var(--accent)}.dexrow.missing{opacity:.5}.thumb{width:52px;height:52px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;color:var(--accent);font-weight:1000;overflow:hidden;flex:0 0 52px}.thumb img{width:100%;height:100%;object-fit:cover}.histphoto{width:72px;height:72px;border-radius:12px;object-fit:cover;border:1px solid var(--line);flex:0 0 72px}.maker{color:var(--accent);font-size:13px;font-weight:1000;letter-spacing:1px;margin:18px 0 8px}.hero{text-align:center;padding:34px 0}.hero .eyebrow{color:var(--accent);font-weight:1000;letter-spacing:3px}.hero h1{font-size:38px;margin:12px 0 4px}.xp{font-size:25px;color:var(--accent);font-weight:1000;margin:20px}.choice{cursor:pointer}.chip{display:inline-block;background:var(--panel);border:1px solid var(--line);padding:9px 12px;border-radius:999px;margin:4px;color:var(--text);font-weight:800;cursor:pointer}.chip.on{border-color:var(--accent);background:#192319}.notice{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-size:13px}.hidden{display:none!important}.photoStrip{display:flex;gap:9px;overflow-x:auto;padding:2px 0 10px}.photoMini{width:82px;height:82px;border-radius:14px;border:2px solid var(--line);overflow:hidden;position:relative;flex:0 0 82px;background:var(--panel2)}.photoMini.cover{border-color:var(--accent)}.photoMini img{width:100%;height:100%;object-fit:cover}.photoMini .num{position:absolute;bottom:4px;left:4px;background:#000b;color:#fff;border-radius:8px;padding:2px 6px;font-size:10px;font-weight:900}.focusPreview{height:360px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.focusPreview img{width:100%;height:100%;object-fit:cover}.arrowGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;max-width:280px;margin:14px auto}.arrowGrid button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:13px;font-size:20px}.zoomControls{display:grid;grid-template-columns:54px 1fr 54px;gap:10px;align-items:center;margin:14px 0}.zoomControls button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px;font-size:22px;font-weight:900}.zoomControls input[type=range]{width:100%;accent-color:var(--accent)}.zoomReadout{text-align:center;color:var(--accent);font-size:12px;font-weight:1000;letter-spacing:1px;margin-top:-6px}.focusPreview img,.photo img,.thumb img,.photoMini img,.galleryItem img{will-change:transform}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.toolbar .chip{margin:0}.searchRow{display:flex;gap:8px;align-items:center}.dexSearch{margin-top:14px;background:#101713;border:2px solid var(--accent);border-radius:18px;padding:12px}.dexSearch .input{border:0;background:#0c120f;padding:13px 14px}.dexSearchLabel{color:var(--accent);font-size:11px;font-weight:1000;letter-spacing:1.4px;margin:0 0 8px 2px}.small{font-size:12px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px}.galleryItem{position:relative;height:170px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.galleryItem img{width:100%;height:100%;object-fit:cover}.galleryItem .badge{position:absolute;left:8px;bottom:8px;background:#000c;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:900}.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unknown{color:#ffd36c}.dataTools{display:flex;gap:8px;margin-top:22px}.dataTools>*{flex:1}.floatingSave{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));width:min(484px,calc(100% - 36px));z-index:60;padding:8px;background:rgba(10,14,13,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px #0008;backdrop-filter:blur(10px)}.floatingSave .btn{margin:0}.editPad{padding-bottom:92px}
@@ -13,7 +13,7 @@
 <body><main id="app" class="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const UPDATE = '13';
+const UPDATE = '14';
 const STORAGE_KEY = 'roaddex-demo';
 const LEGACY_MIGRATION_KEY = 'roaddex-v10-migrated';
 const SUPABASE_URL = 'https://eixtfpkzipdshzpotzsy.supabase.co';
@@ -267,6 +267,10 @@ let proposalVariant='';
 let proposalPartialMake='';
 let proposalPartialModel='';
 let catalogueRequestText='';
+let playerProgress=null;
+let viewedProgress=null;
+let leaderboardRows=[];
+let leaderboardMode='OVERALL';
 function save(){
   try {
     const cache=deepClone(state);
@@ -293,15 +297,75 @@ function recentCard(s){
   const c=s.car?car(s.car):null, p=getCover(s), subtitle=c?c.gen:(s.partial?'Needs refinement':'Awaiting identification');
   return '<div class="card row choice" role="button" tabindex="0" onclick="showSighting(\''+s.id+'\')">'+photoThumb(p)+'<div class="grow"><div class="car '+(!c?'unknown':'')+'">'+sightingName(s)+'</div><div class="muted ellipsis">'+subtitle+' · '+(s.context==='WILD'?'Southern Ontario':'Journal')+'</div></div>'+(c?pill(s.context==='WILD'?c.rarity:s.context):pill(s.partial?'NEEDS ID':'UNKNOWN'))+'<div style="color:var(--accent);font-size:24px">›</div></div>';
 }
+
+function trustedBadge(isTrusted){return isTrusted?'<span class="pill">TRUSTED TESTER</span>':'';}
+function xpLabel(n){return Number(n||0).toLocaleString()+' XP';}
+async function loadMyProgress(){
+  if(!session)return;
+  const {data,error}=await sb.rpc('get_player_progress',{p_user_id:session.user.id});
+  if(error)throw error;
+  playerProgress=(data||[])[0]||null;
+}
+async function openMyProfile(){
+  viewedProgress=playerProgress;
+  if(!viewedProgress)await loadMyProgress();
+  viewedProgress=playerProgress;
+  screen='profile';render();window.scrollTo(0,0);
+}
+async function openPlayerProfile(userId){
+  setBusy(true,'Loading player profile…');
+  try{
+    const {data,error}=await sb.rpc('get_player_progress',{p_user_id:userId});
+    if(error)throw error;
+    viewedProgress=(data||[])[0]||null;
+    screen='profile';
+  }catch(err){cloudError(err);}
+  finally{setBusy(false);render();window.scrollTo(0,0);}
+}
+async function openLeaderboards(){
+  setBusy(true,'Loading leaderboards…');
+  try{
+    const {data,error}=await sb.rpc('get_roaddex_leaderboards',{p_limit:25});
+    if(error)throw error;
+    leaderboardRows=data||[];
+    screen='leaderboards';
+  }catch(err){cloudError(err);}
+  finally{setBusy(false);render();window.scrollTo(0,0);}
+}
+function setLeaderboardMode(mode){leaderboardMode=mode;render();}
+function leaderboardScreen(){
+  const rows=leaderboardRows.filter(r=>r.board===leaderboardMode);
+  const label=leaderboardMode==='SPOTTING'?'Spotting XP':leaderboardMode==='IDENTIFYING'?'Identifying XP':'RoadDex Rank';
+  const value=r=>leaderboardMode==='SPOTTING'?r.spotting_xp:leaderboardMode==='IDENTIFYING'?r.identifying_xp:r.overall_score;
+  const extra=r=>leaderboardMode==='SPOTTING'?(r.wild_dex+' Wild Dex'):leaderboardMode==='IDENTIFYING'?(r.successful_ids+' confirmed IDs'):(xpLabel(r.spotting_xp)+' spotting · '+xpLabel(r.identifying_xp)+' identifying');
+  const cards=rows.length?rows.map(r=>'<div class="card row choice" onclick="openPlayerProfile(\''+r.user_id+'\')"><div class="big" style="font-size:24px;width:42px">#'+r.rank+'</div><div class="grow"><div class="car">'+escapeHtml(r.display_name)+'</div><div class="muted">'+escapeHtml(extra(r))+'</div>'+(r.trusted_tester?'<div class="communityOwner">TRUSTED TESTER</div>':'')+'</div><div style="text-align:right"><div class="big" style="font-size:22px">'+Number(value(r)||0).toLocaleString()+'</div><div class="label">'+label+'</div></div></div>').join(''):'<div class="card"><div class="muted">No scores yet.</div></div>';
+  return back('LEADERBOARDS')+'<div class="title">Leaderboards</div><div class="muted">Spotting and identifying are separate paths. Overall rewards your stronger path plus 25% of the other.</div><div class="toolbar"><span class="chip '+(leaderboardMode==='SPOTTING'?'on':'')+'" onclick="setLeaderboardMode(\'SPOTTING\')">SPOTTING</span><span class="chip '+(leaderboardMode==='IDENTIFYING'?'on':'')+'" onclick="setLeaderboardMode(\'IDENTIFYING\')">IDENTIFYING</span><span class="chip '+(leaderboardMode==='OVERALL'?'on':'')+'" onclick="setLeaderboardMode(\'OVERALL\')">OVERALL</span></div><div class="section">'+label.toUpperCase()+'</div>'+cards;
+}
+function profileScreen(){
+  const p=viewedProgress||playerProgress;
+  if(!p)return back('PROFILE')+'<div class="title">Profile unavailable</div>';
+  const own=p.user_id===session.user.id;
+  return back('PLAYER PROFILE')+'<div class="title">'+escapeHtml(p.display_name)+'</div>'+trustedBadge(p.trusted_tester)+
+    '<div class="grid" style="margin-top:14px"><div class="card"><div class="label">SPOTTING XP</div><div class="big">'+Number(p.spotting_xp||0).toLocaleString()+'</div></div><div class="card"><div class="label">IDENTIFYING XP</div><div class="big">'+Number(p.identifying_xp||0).toLocaleString()+'</div></div></div>'+
+    '<div class="card"><div class="label">ROADDEX RANK SCORE</div><div class="big">'+Number(p.overall_score||0).toLocaleString()+'</div><div class="muted small">Higher XP category + 25% of the lower category.</div></div>'+
+    '<div class="grid"><div class="card"><div class="label">WILD SIGHTINGS</div><div class="big">'+Number(p.wild_sightings||0).toLocaleString()+'</div></div><div class="card"><div class="label">WILD DEX</div><div class="big">'+Number(p.wild_dex||0).toLocaleString()+'</div></div></div>'+
+    '<div class="card"><div class="label">CONFIRMED IDENTIFICATIONS</div><div class="big">'+Number(p.successful_ids||0).toLocaleString()+'</div></div>'+
+    (p.trusted_tester?'<div class="notice"><b>Trusted Tester</b> · identification confidence weight '+Number(p.identifier_vote_weight||1).toFixed(1)+'×.</div>':'')+
+    (own?'<button class="btn secondary" onclick="openLeaderboards()">VIEW LEADERBOARDS</button>':'');
+}
+
 function home(){
   const ids=wildIds(), recent=state.sightings.slice(0,4).map(recentCard).join('');
   const who=profile?.display_name||profile?.username||session?.user?.email||'Tester';
   const migrated=localStorage.getItem(LEGACY_MIGRATION_KEY+'-'+session.user.id)==='1';
   const migrateButton=legacySightings.length&&!migrated?'<button class="btn secondary" onclick="migrateLegacyData()">IMPORT THIS DEVICE’S V9 DATA · '+legacySightings.length+'</button>':'';
-  return '<div class="top"><div class="logo">ROADDEX</div><div class="tag">FIND THEM IN THE WILD.</div><div class="version">SHARED TEST BUILD · UPDATE '+UPDATE+'</div></div>'+ 
-    '<div class="cloudbar"><div><div class="cloudok">● CLOUD CONNECTED</div><div class="muted small">'+escapeHtml(who)+'</div></div><button class="chip" onclick="refreshCloud()">REFRESH</button></div>'+migrateButton+
-    '<div class="grid"><div class="card"><div class="label">YOUR WILD DEX</div><div class="big">'+ids.size+' <span class="muted" style="font-size:14px">/ '+cars.length+'</span></div></div><div class="card"><div class="label">YOUR LIFE LIST</div><div class="big">'+ids.size+'</div></div></div>'+ 
-    '<button class="btn" onclick="startCapture()">SPOT A CAR</button><button class="btn secondary" onclick="startBatchUnknown()">BATCH IMPORT → I DON’T KNOW</button><div class="grid"><button class="btn secondary" onclick="nav(\'dex\')">WILD DEX</button><button class="btn secondary" onclick="nav(\'journal\')">JOURNAL</button></div><button class="btn secondary" onclick="nav(\'idboard\')">SHARED IDENTIFICATION BOARD · '+cloudBoard.length+'</button>'+ 
+  const prog=playerProgress||{spotting_xp:0,identifying_xp:0,overall_score:0,trusted_tester:false};
+  return '<div class="top"><div class="logo">ROADDEX</div><div class="tag">FIND THEM IN THE WILD.</div><div class="version">SHARED TEST BUILD · UPDATE '+UPDATE+'</div></div>'+
+    '<div class="cloudbar"><div><div class="cloudok">● CLOUD CONNECTED</div><div class="muted small">'+escapeHtml(who)+' '+trustedBadge(prog.trusted_tester)+'</div></div><button class="chip" onclick="refreshCloud()">REFRESH</button></div>'+migrateButton+
+    '<div class="grid"><div class="card choice" onclick="openMyProfile()"><div class="label">SPOTTING XP</div><div class="big">'+Number(prog.spotting_xp||0).toLocaleString()+'</div></div><div class="card choice" onclick="openMyProfile()"><div class="label">IDENTIFYING XP</div><div class="big">'+Number(prog.identifying_xp||0).toLocaleString()+'</div></div></div>'+
+    '<div class="card choice" onclick="openLeaderboards()"><div class="row"><div class="grow"><div class="label">ROADDEX RANK SCORE</div><div class="big">'+Number(prog.overall_score||0).toLocaleString()+'</div></div><div style="color:var(--accent);font-size:28px">›</div></div></div>'+
+    '<div class="grid"><div class="card"><div class="label">YOUR WILD DEX</div><div class="big">'+ids.size+' <span class="muted" style="font-size:14px">/ '+cars.length+'</span></div></div><div class="card"><div class="label">YOUR LIFE LIST</div><div class="big">'+ids.size+'</div></div></div>'+
+    '<button class="btn" onclick="startCapture()">SPOT A CAR</button><button class="btn secondary" onclick="startBatchUnknown()">BATCH IMPORT → I DON’T KNOW</button><div class="grid"><button class="btn secondary" onclick="nav(\'dex\')">WILD DEX</button><button class="btn secondary" onclick="nav(\'journal\')">JOURNAL</button></div><div class="grid"><button class="btn secondary" onclick="openMyProfile()">PROFILE</button><button class="btn secondary" onclick="openLeaderboards()">LEADERBOARDS</button></div><button class="btn secondary" onclick="nav(\'idboard\')">SHARED IDENTIFICATION BOARD · '+cloudBoard.length+'</button>'+
     '<div class="section">RECENT SIGHTINGS</div>'+(recent || '<div class="card"><div class="car">Nothing spotted yet.</div><div class="muted">The automotive wilderness remains tragically unharvested.</div></div>')+
     '<div class="dataTools"><button class="btn secondary small" onclick="exportData()">EXPORT BACKUP</button><button class="btn secondary small" onclick="signOutCloud()">SIGN OUT</button></div>';
 }
@@ -514,7 +578,7 @@ function idboard(){
   const list=cloudBoard;
   const partial=list.filter(s=>s.partial), unknown=list.filter(s=>!s.partial);
   const section=(name,items,empty)=>'<div class="section">'+name+' · '+items.length+'</div>'+(items.length?items.map(communityCard).join(''):'<div class="card"><div class="muted">'+empty+'</div></div>');
-  return back('IDENTIFICATION BOARD')+'<div class="title">Shared Identification Board</div><div class="muted">Open a mystery sighting, propose an ID, and review other players’ proposals. Five reviewers participate; three matching AGREE votes resolve the sighting automatically.</div><button class="btn secondary" onclick="refreshCloud()">REFRESH SHARED BOARD</button>'+section('NEEDS REFINEMENT',partial,'No partial IDs waiting.')+section('I DON’T KNOW',unknown,'No mystery cars waiting.');
+  return back('IDENTIFICATION BOARD')+'<div class="title">Shared Identification Board</div><div class="muted">Open a mystery sighting, propose an ID, and review other players’ proposals. A proposal confirms at 3 confidence points from at least 2 independent people. Trusted Testers currently carry 1.5× weight.</div><button class="btn secondary" onclick="refreshCloud()">REFRESH SHARED BOARD</button>'+section('NEEDS REFINEMENT',partial,'No partial IDs waiting.')+section('I DON’T KNOW',unknown,'No mystery cars waiting.');
 }
 async function openCommunitySighting(id){
   boardSightingId=id;boardProposals=[];boardRequest=null;proposalQuery='';proposalCarId=null;proposalVariant='';proposalPartialMake='';proposalPartialModel='';catalogueRequestText='';screen='communitySighting';render();
@@ -524,27 +588,41 @@ async function openCommunitySighting(id){
 async function loadBoardDetail(){
   if(!boardSightingId)return;
   const [pr,rr]=await Promise.all([
-    sb.from('identification_proposals').select('id,sighting_id,proposer_id,generation_id,variant_id,proposed_make,proposed_model,status,comment,created_at,vehicle_generations(catalog_key),vehicle_variants(name),proposer:profiles!identification_proposals_proposer_id_fkey(username,display_name),identification_votes(voter_id,vote,created_at)').eq('sighting_id',boardSightingId).order('created_at',{ascending:true}),
+    sb.from('identification_proposals').select('id,sighting_id,proposer_id,generation_id,variant_id,proposed_make,proposed_model,status,comment,created_at,vehicle_generations(catalog_key),vehicle_variants(name),proposer:profiles!identification_proposals_proposer_id_fkey(username,display_name,reviewer_group,trusted_tester,identifier_vote_weight),identification_votes(voter_id,vote,created_at,voter:profiles!identification_votes_voter_id_fkey(reviewer_group,trusted_tester,identifier_vote_weight))').eq('sighting_id',boardSightingId).order('created_at',{ascending:true}),
     sb.from('catalogue_requests').select('id,sighting_id,user_id,query_text,notes,status,created_at').eq('sighting_id',boardSightingId).maybeSingle()
   ]);
   if(pr.error)throw pr.error;if(rr.error)throw rr.error;
-  boardProposals=(pr.data||[]).map(p=>({...p,catalogKey:p.vehicle_generations?.catalog_key||null,variantName:p.vehicle_variants?.name||'',proposerName:p.proposer?.display_name||p.proposer?.username||'Tester',votes:p.identification_votes||[]}));
+  boardProposals=(pr.data||[]).map(p=>({...p,catalogKey:p.vehicle_generations?.catalog_key||null,variantName:p.vehicle_variants?.name||'',proposerName:p.proposer?.display_name||p.proposer?.username||'Tester',proposerGroup:p.proposer?.reviewer_group||p.proposer_id,proposerTrusted:!!p.proposer?.trusted_tester,proposerWeight:Number(p.proposer?.identifier_vote_weight||1),votes:p.identification_votes||[]}));
   boardRequest=rr.data||null;
 }
-function boardReviewCount(){return new Set(boardProposals.flatMap(p=>(p.votes||[]).map(v=>v.voter_id))).size;}
+function proposalSupport(p){
+  const groups=new Map();
+  groups.set(p.proposerGroup||p.proposer_id,Number(p.proposerWeight||1));
+  for(const v of (p.votes||[])){
+    if(v.vote!=='AGREE')continue;
+    const g=v.voter?.reviewer_group||v.voter_id;
+    const w=Number(v.voter?.identifier_vote_weight||1);
+    groups.set(g,Math.max(groups.get(g)||0,w));
+  }
+  return {points:[...groups.values()].reduce((a,b)=>a+b,0),people:groups.size};
+}
+function strongestBoardSupport(){
+  const vals=boardProposals.filter(p=>p.status==='OPEN').map(proposalSupport);
+  return vals.sort((a,b)=>b.points-a.points||b.people-a.people)[0]||{points:0,people:0};
+}
 function proposalVoteCount(p,vote){return (p.votes||[]).filter(v=>v.vote===vote).length;}
 function myProposalVote(p){return (p.votes||[]).find(v=>v.voter_id===session.user.id)?.vote||'';}
 function proposalCard(p,s){
   const c=p.catalogKey?car(p.catalogKey):null;
   const partialLabel=!c&&p.proposed_make?String(p.proposed_make)+(p.proposed_model?' '+String(p.proposed_model):''):'';
-  const agrees=proposalVoteCount(p,'AGREE'),disagrees=proposalVoteCount(p,'DISAGREE'),unsure=proposalVoteCount(p,'UNSURE');
+  const agrees=proposalVoteCount(p,'AGREE'),disagrees=proposalVoteCount(p,'DISAGREE'),unsure=proposalVoteCount(p,'UNSURE'),support=proposalSupport(p);
   const mineProposal=p.proposer_id===session.user.id, mineSighting=s.user_id===session.user.id, myVote=myProposalVote(p);
   const status=p.status==='ACCEPTED'?pill('ACCEPTED'):p.status==='REJECTED'?pill('REJECTED'):pill('OPEN');
   let actions='';
   if(p.status==='OPEN'&&!mineSighting&&!mineProposal){
-    actions='<div class="toolbar"><span class="chip '+(myVote==='AGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'AGREE\')">AGREE · '+agrees+'/3</span><span class="chip '+(myVote==='DISAGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'DISAGREE\')">DISAGREE · '+disagrees+'</span><span class="chip '+(myVote==='UNSURE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'UNSURE\')">UNSURE · '+unsure+'</span></div>';
+    actions='<div class="toolbar"><span class="chip '+(myVote==='AGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'AGREE\')">AGREE · '+agrees+'</span><span class="chip '+(myVote==='DISAGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'DISAGREE\')">DISAGREE · '+disagrees+'</span><span class="chip '+(myVote==='UNSURE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'UNSURE\')">UNSURE · '+unsure+'</span></div>';
   } else if(mineProposal&&p.status==='OPEN') actions='<div class="notice">Your proposal. Other reviewers decide it.</div>';
-  return '<div class="card"><div class="row"><div class="grow"><div class="car">'+(c?escapeHtml(c.make+' '+c.model):escapeHtml(partialLabel||'Partial identification'))+'</div><div class="muted">'+(c?escapeHtml(c.gen+' · '+c.years):'PARTIAL ID · still needs refinement')+(p.variantName?' · '+escapeHtml(p.variantName):'')+'</div><div class="communityOwner">PROPOSED BY '+escapeHtml(p.proposerName)+'</div></div>'+status+'</div>'+(p.comment?'<div class="muted" style="margin-top:10px">'+escapeHtml(p.comment)+'</div>':'')+actions+'</div>';
+  return '<div class="card"><div class="row"><div class="grow"><div class="car">'+(c?escapeHtml(c.make+' '+c.model):escapeHtml(partialLabel||'Partial identification'))+'</div><div class="muted">'+(c?escapeHtml(c.gen+' · '+c.years):'PARTIAL ID · still needs refinement')+(p.variantName?' · '+escapeHtml(p.variantName):'')+'</div><div class="communityOwner">PROPOSED BY '+escapeHtml(p.proposerName)+(p.proposerTrusted?' · TRUSTED TESTER':'')+'</div><div class="muted small">CONFIDENCE '+support.points.toFixed(1)+' / 3 · '+support.people+' / 2 PEOPLE</div></div>'+status+'</div>'+(p.comment?'<div class="muted" style="margin-top:10px">'+escapeHtml(p.comment)+'</div>':'')+actions+'</div>';
 }
 function proposalSearchHtml(){
   if(proposalCarId){const c=car(proposalCarId);return '<div class="card selected"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div><div class="communityOwner">DEX GENERATION</div></div>'+(c.variants.length?'<div class="section">NOTABLE VARIANT · OPTIONAL</div><select class="input" onchange="proposalVariant=this.value;render()"><option value="">Generation only</option>'+c.variants.map(v=>'<option '+(proposalVariant===v?'selected':'')+'>'+escapeHtml(v)+'</option>').join('')+'</select>':'')+'<button class="btn" onclick="submitIdentificationProposal()">SUBMIT THIS ID</button><button class="btn secondary" onclick="proposalCarId=null;proposalVariant=\'\';proposalQuery=\'\';render()">CHOOSE DIFFERENT VEHICLE</button>';
@@ -556,11 +634,11 @@ function proposalSearchHtml(){
 function communitySighting(){
   const s=cloudBoard.find(x=>x.id===boardSightingId);
   if(!s)return back('COMMUNITY REVIEW','idboard')+'<div class="title">Sighting resolved</div><div class="card"><div class="muted">This sighting is no longer in the unresolved queue. Consensus may have identified it while you were looking at it.</div></div><button class="btn" onclick="nav(\'idboard\')">BACK TO BOARD</button>';
-  const mine=s.user_id===session.user.id, ps=getPhotos(s), reviewers=boardReviewCount();
+  const mine=s.user_id===session.user.id, ps=getPhotos(s), support=strongestBoardSupport();
   const photos=ps.length?'<div class="gallery">'+ps.map(p=>'<div class="galleryItem"><img src="'+p.data+'" style="'+imgStyle(p)+'"></div>').join('')+'</div>':'<div class="photo"><div class="label">NO PHOTO</div></div>';
   const proposed=boardProposals.length?boardProposals.map(p=>proposalCard(p,s)).join(''):'<div class="card"><div class="muted">No proposed IDs yet.</div></div>';
   const request=boardRequest?'<div class="card"><div class="label">CATALOGUE REQUEST</div><div class="car" style="margin-top:5px">'+escapeHtml(boardRequest.query_text)+'</div><div class="muted">'+escapeHtml(boardRequest.status)+'</div></div>':'<input id="catalogueRequest" class="input" value="'+escapeHtml(catalogueRequestText)+'" placeholder="What vehicle is missing?" oninput="catalogueRequestText=this.value"><button class="btn secondary" onclick="submitCatalogueRequest()">VEHICLE NOT IN CATALOGUE</button>';
-  return back('COMMUNITY REVIEW','idboard')+'<div class="title '+(!s.car?'unknown':'')+'">'+escapeHtml(sightingName(s))+'</div><div class="muted">'+(s.partial?'Submitted as '+escapeHtml(s.partial.make+(s.partial.model?' '+s.partial.model:'')):'Submitted as unknown')+' · '+escapeHtml(s.ownerName||'Tester')+'</div><div style="margin-top:14px">'+photos+'</div><div class="grid" style="margin-top:12px"><div class="card"><div class="label">REVIEWERS</div><div class="big">'+reviewers+' / 5</div></div><div class="card"><div class="label">TO RESOLVE</div><div class="big">3</div><div class="muted small">matching agrees</div></div></div><div class="section">PROPOSED IDENTIFICATIONS</div>'+proposed+(mine?'<div class="notice">This is your sighting, so you do not vote on it. Correct it directly if you know the answer now.</div><button class="btn secondary" onclick="showSighting(\''+s.id+'\')">EDIT YOUR SIGHTING</button>':'<div class="section">PROPOSE AN ID</div>'+proposalSearchHtml())+'<div class="section">CAN’T FIND IT?</div>'+request;
+  return back('COMMUNITY REVIEW','idboard')+'<div class="title '+(!s.car?'unknown':'')+'">'+escapeHtml(sightingName(s))+'</div><div class="muted">'+(s.partial?'Submitted as '+escapeHtml(s.partial.make+(s.partial.model?' '+s.partial.model:'')):'Submitted as unknown')+' · '+escapeHtml(s.ownerName||'Tester')+'</div><div style="margin-top:14px">'+photos+'</div><div class="grid" style="margin-top:12px"><div class="card"><div class="label">CONFIDENCE</div><div class="big">'+support.points.toFixed(1)+' / 3</div></div><div class="card"><div class="label">INDEPENDENT PEOPLE</div><div class="big">'+support.people+' / 2</div></div></div><div class="section">PROPOSED IDENTIFICATIONS</div>'+proposed+(mine?'<div class="notice">This is your sighting, so you do not vote on it. Correct it directly if you know the answer now.</div><button class="btn secondary" onclick="showSighting(\''+s.id+'\')">EDIT YOUR SIGHTING</button>':'<div class="section">PROPOSE AN ID</div>'+proposalSearchHtml())+'<div class="section">CAN’T FIND IT?</div>'+request;
 }
 async function submitIdentificationProposal(){
   const s=cloudBoard.find(x=>x.id===boardSightingId),c=proposalCarId?car(proposalCarId):null;if(!s||!c||cloudBusy)return;
@@ -698,7 +776,7 @@ async function signUpCloud(){
   if(data.session){session=data.session;await loadCloud();screen='home';setBusy(false);render();}
   else {setBusy(false);alert('Account created. Supabase wants you to confirm the email before signing in. Check your inbox, then come back here.');render();}
 }
-async function signOutCloud(){await sb.auth.signOut();session=null;profile=null;cloudBoard=[];state=normalizeState({sightings:[]});screen='auth';render();}
+async function signOutCloud(){await sb.auth.signOut();session=null;profile=null;playerProgress=null;viewedProgress=null;leaderboardRows=[];cloudBoard=[];state=normalizeState({sightings:[]});screen='auth';render();}
 async function loadCatalogMaps(){
   const [catalogue,mapRows]=await Promise.all([
     sb.rpc('get_vehicle_catalogue'),
@@ -731,13 +809,13 @@ async function loadOwnSightings(){
   const out=[];for(const row of data||[])out.push(await rowToLocal(row));state=normalizeState({sightings:out});save();
 }
 async function loadCommunityBoard(){
-  if(!session)return;const {data,error}=await sb.from('sightings').select('*,profiles(username,display_name),vehicle_generations(catalog_key),vehicle_variants(name),sighting_photos(*),sighting_tags(tag)').neq('identity_status','IDENTIFIED').order('captured_at',{ascending:false}).limit(200);if(error)throw error;
-  const out=[];for(const row of data||[]){const s=await rowToLocal(row);s.ownerName=row.profiles?.display_name||row.profiles?.username||'Tester';out.push(s);}cloudBoard=out;
+  if(!session)return;const {data,error}=await sb.from('sightings').select('*,profiles(username,display_name,reviewer_group,trusted_tester,identifier_vote_weight),vehicle_generations(catalog_key),vehicle_variants(name),sighting_photos(*),sighting_tags(tag)').neq('identity_status','IDENTIFIED').order('captured_at',{ascending:false}).limit(200);if(error)throw error;
+  const out=[];for(const row of data||[]){const s=await rowToLocal(row);s.ownerName=row.profiles?.display_name||row.profiles?.username||'Tester';s.ownerGroup=row.profiles?.reviewer_group||row.user_id;s.ownerTrusted=!!row.profiles?.trusted_tester;s.ownerWeight=Number(row.profiles?.identifier_vote_weight||1);out.push(s);}cloudBoard=out;
 }
 async function loadCloud(){
   if(!session)return;await loadCatalogMaps();
-  const {data:p,error:pe}=await sb.from('profiles').select('username,display_name').eq('id',session.user.id).single();if(pe&&pe.code!=='PGRST116')throw pe;profile=p||{display_name:session.user.email?.split('@')[0]};
-  await Promise.all([loadOwnSightings(),loadCommunityBoard()]);initialCloudLoad=true;
+  const {data:p,error:pe}=await sb.from('profiles').select('username,display_name,trusted_tester,identifier_vote_weight,reviewer_group').eq('id',session.user.id).single();if(pe&&pe.code!=='PGRST116')throw pe;profile=p||{display_name:session.user.email?.split('@')[0]};
+  await Promise.all([loadOwnSightings(),loadCommunityBoard(),loadMyProgress()]);initialCloudLoad=true;
 }
 function generationIdFor(s){return s.car?catalogMap[s.car]||null:null;}
 function variantIdFor(s){return s.car&&s.variant?variantMap[s.car+'|'+s.variant]||null:null;}
@@ -786,6 +864,6 @@ function exportData(){
 function importData(e){
   const f=e.target.files&&e.target.files[0]; if(!f)return; const r=new FileReader(); r.onload=()=>{ try{ const incoming=normalizeState(JSON.parse(r.result)); if(!confirm('Replace this prototype\'s local data with the selected backup?'))return; state=incoming; save(); nav('home'); }catch{ alert('That file is not a valid RoadDex backup.'); } }; r.readAsText(f);
 }
-function render(){ if(!session){app.innerHTML=authScreen()+busyOverlay();return;} const views={home,capture:captureScreen,batchunknown:batchUnknownScreen,photoedit:photoEditScreen,identify,discovery,dex,idboard,communitySighting,journal,sighting,editSighting:editSightingScreen,vehicle}; app.innerHTML=(views[screen]||home)()+busyOverlay(); }
+function render(){ if(!session){app.innerHTML=authScreen()+busyOverlay();return;} const views={home,capture:captureScreen,batchunknown:batchUnknownScreen,photoedit:photoEditScreen,identify,discovery,dex,idboard,communitySighting,journal,sighting,editSighting:editSightingScreen,vehicle,profile:profileScreen,leaderboards:leaderboardScreen}; app.innerHTML=(views[screen]||home)()+busyOverlay(); }
 boot();
 </script></body></html>
