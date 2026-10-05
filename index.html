@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>RoadDex Prototype · Update 14</title>
+<title>RoadDex Prototype · Update 15</title>
 <style>
 :root{--bg:#0a0e0d;--panel:#131a17;--panel2:#1b2520;--text:#f3f7f4;--muted:#91a097;--accent:#b7f542;--line:#28352e;--danger:#ff726f}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.app{max-width:520px;margin:0 auto;min-height:100vh;padding:env(safe-area-inset-top) 18px calc(30px + env(safe-area-inset-bottom))}.top{padding:32px 0 18px}.logo{font-size:38px;font-weight:1000;letter-spacing:3px}.tag{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:2px}.version{font-size:10px;color:var(--muted);font-weight:900;letter-spacing:1.4px;margin-top:7px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.label{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px}.big{font-size:29px;font-weight:1000}.btn{width:100%;border:0;border-radius:14px;background:var(--accent);color:#0b120e;padding:15px;font-weight:1000;font-size:15px;letter-spacing:.4px;margin:6px 0;cursor:pointer}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.danger{background:transparent;color:var(--danger);border:1px solid #623432}.section{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1.4px;margin:22px 0 9px}.muted{color:var(--muted);line-height:1.45}.pill{display:inline-block;background:var(--panel2);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:10px;font-weight:900;text-transform:uppercase}.row{display:flex;gap:12px;align-items:center}.grow{flex:1;min-width:0}.car{font-size:17px;font-weight:900}.title{font-size:27px;font-weight:1000;margin:8px 0}.input{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:16px}.back{background:none;border:0;color:var(--muted);font-weight:900;padding:16px 0 2px;font-size:14px}.context.selected{border-color:var(--accent);background:#172019}.photo{height:260px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px}.photo img{width:100%;height:100%;object-fit:cover}.photo .glyph{font-size:70px;color:var(--accent)}.dexrow.missing{opacity:.5}.thumb{width:52px;height:52px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;color:var(--accent);font-weight:1000;overflow:hidden;flex:0 0 52px}.thumb img{width:100%;height:100%;object-fit:cover}.histphoto{width:72px;height:72px;border-radius:12px;object-fit:cover;border:1px solid var(--line);flex:0 0 72px}.maker{color:var(--accent);font-size:13px;font-weight:1000;letter-spacing:1px;margin:18px 0 8px}.hero{text-align:center;padding:34px 0}.hero .eyebrow{color:var(--accent);font-weight:1000;letter-spacing:3px}.hero h1{font-size:38px;margin:12px 0 4px}.xp{font-size:25px;color:var(--accent);font-weight:1000;margin:20px}.choice{cursor:pointer}.chip{display:inline-block;background:var(--panel);border:1px solid var(--line);padding:9px 12px;border-radius:999px;margin:4px;color:var(--text);font-weight:800;cursor:pointer}.chip.on{border-color:var(--accent);background:#192319}.notice{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-size:13px}.hidden{display:none!important}.photoStrip{display:flex;gap:9px;overflow-x:auto;padding:2px 0 10px}.photoMini{width:82px;height:82px;border-radius:14px;border:2px solid var(--line);overflow:hidden;position:relative;flex:0 0 82px;background:var(--panel2)}.photoMini.cover{border-color:var(--accent)}.photoMini img{width:100%;height:100%;object-fit:cover}.photoMini .num{position:absolute;bottom:4px;left:4px;background:#000b;color:#fff;border-radius:8px;padding:2px 6px;font-size:10px;font-weight:900}.focusPreview{height:360px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.focusPreview img{width:100%;height:100%;object-fit:cover}.arrowGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;max-width:280px;margin:14px auto}.arrowGrid button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:13px;font-size:20px}.zoomControls{display:grid;grid-template-columns:54px 1fr 54px;gap:10px;align-items:center;margin:14px 0}.zoomControls button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px;font-size:22px;font-weight:900}.zoomControls input[type=range]{width:100%;accent-color:var(--accent)}.zoomReadout{text-align:center;color:var(--accent);font-size:12px;font-weight:1000;letter-spacing:1px;margin-top:-6px}.focusPreview img,.photo img,.thumb img,.photoMini img,.galleryItem img{will-change:transform}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.toolbar .chip{margin:0}.searchRow{display:flex;gap:8px;align-items:center}.dexSearch{margin-top:14px;background:#101713;border:2px solid var(--accent);border-radius:18px;padding:12px}.dexSearch .input{border:0;background:#0c120f;padding:13px 14px}.dexSearchLabel{color:var(--accent);font-size:11px;font-weight:1000;letter-spacing:1.4px;margin:0 0 8px 2px}.small{font-size:12px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px}.galleryItem{position:relative;height:170px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.galleryItem img{width:100%;height:100%;object-fit:cover}.galleryItem .badge{position:absolute;left:8px;bottom:8px;background:#000c;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:900}.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unknown{color:#ffd36c}.dataTools{display:flex;gap:8px;margin-top:22px}.dataTools>*{flex:1}.floatingSave{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));width:min(484px,calc(100% - 36px));z-index:60;padding:8px;background:rgba(10,14,13,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px #0008;backdrop-filter:blur(10px)}.floatingSave .btn{margin:0}.editPad{padding-bottom:92px}
@@ -13,7 +13,7 @@
 <body><main id="app" class="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const UPDATE = '14';
+const UPDATE = '15';
 const STORAGE_KEY = 'roaddex-demo';
 const LEGACY_MIGRATION_KEY = 'roaddex-v10-migrated';
 const SUPABASE_URL = 'https://eixtfpkzipdshzpotzsy.supabase.co';
@@ -208,15 +208,15 @@ async function runVehicleSearch(q,targetId,mode){
   }
 }
 function chooseVehicleSearchGeneration(id,mode){
-  if(mode==='capture'){selected=id;variant='';partialMake='';partialModel='';identityQuery='';render();return;}
+  if(mode==='capture'){selected=id;variant='';partialMake='';partialModel='';partialTrim='';partialYear='';identityQuery='';render();return;}
   if(mode==='edit'){editDraft.car=id;editDraft.partial=null;editDraft.unknown=false;editDraft.variant='';editQuery='';render();window.scrollTo({top:0,behavior:'smooth'});return;}
-  if(mode==='proposal'){proposalCarId=id;proposalVariant='';proposalPartialMake='';proposalPartialModel='';proposalQuery='';render();return;}
+  if(mode==='proposal'){proposalCarId=id;proposalVariant='';proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';proposalQuery='';render();return;}
 }
 function chooseVehicleSearchPartial(make,model,mode){
   make=(make||'').trim();model=(model||'').trim();
-  if(mode==='capture'){selected=null;variant='';partialMake=make;partialModel=model;identityQuery='';render();return;}
-  if(mode==='edit'){editDraft.car=null;editDraft.variant='';editDraft.partial=make?{make,model}:null;editDraft.unknown=!make;editQuery='';render();window.scrollTo({top:0,behavior:'smooth'});return;}
-  if(mode==='proposal'){proposalCarId=null;proposalVariant='';proposalPartialMake=make;proposalPartialModel=model;proposalQuery='';render();return;}
+  if(mode==='capture'){selected=null;variant='';partialMake=make;partialModel=model;partialTrim='';partialYear='';identityQuery='';render();return;}
+  if(mode==='edit'){editDraft.car=null;editDraft.variant='';editDraft.partial=make?{make,model,trim:'',year:null}:null;editDraft.unknown=!make;editQuery='';render();window.scrollTo({top:0,behavior:'smooth'});return;}
+  if(mode==='proposal'){proposalCarId=null;proposalVariant='';proposalPartialMake=make;proposalPartialModel=model;proposalPartialTrim='';proposalPartialYear='';proposalQuery='';render();return;}
 }
 const app = document.getElementById('app');
 const car = id => cars.find(c => c.id === id);
@@ -254,6 +254,8 @@ let identityQuery = '';
 let editQuery = '';
 let partialMake = '';
 let partialModel = '';
+let partialTrim = '';
+let partialYear = '';
 let sightingTags = [];
 let lastCapture = null;
 let multiCarCount = 0;
@@ -266,6 +268,8 @@ let proposalCarId=null;
 let proposalVariant='';
 let proposalPartialMake='';
 let proposalPartialModel='';
+let proposalPartialTrim='';
+let proposalPartialYear='';
 let catalogueRequestText='';
 let playerProgress=null;
 let viewedProgress=null;
@@ -292,7 +296,22 @@ function imgStyle(p){
   return 'object-position:'+x+'% '+y+'%;transform:scale('+z+');transform-origin:'+x+'% '+y+'%';
 }
 function photoThumb(p, cls='thumb'){ return p&&p.data ? '<div class="'+cls+'"><img src="'+p.data+'" style="'+imgStyle(p)+'"></div>' : '<div class="'+cls+'">✓</div>'; }
-function sightingName(s){ const c=s.car?car(s.car):null; if(c)return c.make+' '+c.model; if(s.partial)return s.partial.make+(s.partial.model?' '+s.partial.model:''); return 'Unknown vehicle'; }
+function partialIdentityLabel(p){
+  if(!p)return 'Unknown vehicle';
+  return [p.make,p.model].filter(Boolean).join(' ')||'Unknown vehicle';
+}
+function partialIdentityDetail(p){
+  if(!p)return '';
+  const bits=[];
+  if(p.trim)bits.push(p.trim);
+  if(p.year)bits.push(String(p.year));
+  return bits.join(' · ');
+}
+function cleanIdentityYear(v){
+  const n=parseInt(String(v||'').replace(/[^0-9]/g,''),10);
+  return Number.isFinite(n)&&n>=1886&&n<=2100?n:null;
+}
+function sightingName(s){ const c=s.car?car(s.car):null; if(c)return c.make+' '+c.model; if(s.partial)return partialIdentityLabel(s.partial); return 'Unknown vehicle'; }
 function recentCard(s){
   const c=s.car?car(s.car):null, p=getCover(s), subtitle=c?c.gen:(s.partial?'Needs refinement':'Awaiting identification');
   return '<div class="card row choice" role="button" tabindex="0" onclick="showSighting(\''+s.id+'\')">'+photoThumb(p)+'<div class="grow"><div class="car '+(!c?'unknown':'')+'">'+sightingName(s)+'</div><div class="muted ellipsis">'+subtitle+' · '+(s.context==='WILD'?'Southern Ontario':'Journal')+'</div></div>'+(c?pill(s.context==='WILD'?c.rarity:s.context):pill(s.partial?'NEEDS ID':'UNKNOWN'))+'<div style="color:var(--accent);font-size:24px">›</div></div>';
@@ -502,7 +521,13 @@ function partialModels(make){ return [...new Set(cars.filter(c=>c.make===make).m
 function setPartialMake(v){ partialMake=v; partialModel=''; render(); }
 function setPartialModel(v){ partialModel=v; render(); }
 function partialPicker(){
-  return '<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(partialMake)+'" placeholder="e.g. Toyota" oninput="partialMake=this.value"><div class="label" style="margin-top:12px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(partialModel)+'" placeholder="Leave blank if you do not know" oninput="partialModel=this.value"><div class="section">SAVE PARTIAL ID</div><button class="btn" onclick="submitPartial(true)">SAVE + ADD ANOTHER CAR FROM THIS PHOTO</button><button class="btn secondary" onclick="submitPartial(false)">SAVE & FINISH</button><div class="muted small">Make-only is valid. Submit only what you are confident about. The community can refine it later.</div></div>';
+  return '<div class="section">ENTER WHAT YOU KNOW</div><div class="card">'+
+    '<div class="label">MAKE</div><input class="input" value="'+escapeHtml(partialMake)+'" placeholder="e.g. Toyota" oninput="partialMake=this.value">'+
+    '<div class="label" style="margin-top:12px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(partialModel)+'" placeholder="e.g. Camry" oninput="partialModel=this.value">'+
+    '<div class="label" style="margin-top:12px">TRIM / VARIANT · OPTIONAL</div><input class="input" value="'+escapeHtml(partialTrim)+'" placeholder="e.g. XSE, Type R, GXP" oninput="partialTrim=this.value">'+
+    '<div class="label" style="margin-top:12px">YEAR · OPTIONAL</div><input class="input" type="number" inputmode="numeric" min="1886" max="2100" value="'+escapeHtml(partialYear)+'" placeholder="e.g. 2018" oninput="partialYear=this.value">'+
+    '<div class="section">SAVE WHAT YOU KNOW</div><button class="btn" onclick="submitPartial(true)">SAVE + ADD ANOTHER CAR FROM THIS PHOTO</button><button class="btn secondary" onclick="submitPartial(false)">SAVE & FINISH</button>'+
+    '<div class="muted small">Only Make is required. Model, trim and year can be added independently. Leave anything you do not know blank.</div></div>';
 }
 function identifyPhotoPanel(){
   if(!capture.photos.length)return '';
@@ -522,7 +547,7 @@ function makeSighting(carId,unknownFlag,partial=null){
   const isNew = capture.context==='WILD' && carId && !wildIds().has(carId);
   return {id:crypto.randomUUID(),car:carId||null,partial:partial||null,unknown:!!unknownFlag,identityStatus:carId?'IDENTIFIED':(partial?'PARTIAL':'UNKNOWN'),variant:(unknownFlag||partial)?'':variant,tags:[...sightingTags],context:capture.context,source:sourceSummary(capture.photos),photos:deepClone(capture.photos.filter(p=>p.data)),coverIndex:Math.min(capture.coverIndex,Math.max(capture.photos.filter(p=>p.data).length-1,0)),at:new Date().toISOString(),isNew};
 }
-function resetIdentityFields(){ selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; sightingTags=[]; }
+function resetIdentityFields(){ selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; partialTrim=''; partialYear=''; sightingTags=[]; }
 async function finishSubmit(s,addAnother=false){
   if(cloudBusy)return;
   const savedCapture={photos:deepClone(capture.photos),coverIndex:capture.coverIndex,context:capture.context};
@@ -539,7 +564,7 @@ async function finishSubmit(s,addAnother=false){
   finally{setBusy(false);render();window.scrollTo(0,0);}
 }
 function submitKnown(addAnother=false){ return finishSubmit(makeSighting(selected,false,null),addAnother); }
-function submitPartial(addAnother=false){ if(!partialMake)return; return finishSubmit(makeSighting(null,false,{make:partialMake,model:partialModel||''}),addAnother); }
+function submitPartial(addAnother=false){ if(!partialMake.trim())return; return finishSubmit(makeSighting(null,false,{make:partialMake.trim(),model:partialModel.trim(),trim:partialTrim.trim(),year:cleanIdentityYear(partialYear)}),addAnother); }
 function submitUnknown(addAnother=false){ return finishSubmit(makeSighting(null,true,null),addAnother); }
 function reuseLastPhotos(){ if(!lastCapture||!lastCapture.photos.length)return; capture={photos:deepClone(lastCapture.photos),coverIndex:lastCapture.coverIndex||0,context:lastCapture.context||'WILD'}; resetIdentityFields(); multiCarCount=lastCapture.loggedCount||1; screen='identify'; render(); window.scrollTo(0,0); }
 function discovery(){
@@ -547,8 +572,8 @@ function discovery(){
   if(!s) return '<div class="title">No sighting found</div><button class="btn secondary" onclick="nav(\'home\')">BACK HOME</button>';
   if(!c){
     const partial=s.partial;
-    const title=partial?(partial.make+(partial.model?' '+partial.model:'')):'Unknown vehicle';
-    const sub=partial?'Partial ID saved · community can refine it.':'Sent to the community identification queue.';
+    const title=partial?partialIdentityLabel(partial):'Unknown vehicle';
+    const sub=partial?('Partial ID saved'+(partialIdentityDetail(partial)?' · '+partialIdentityDetail(partial):'')+' · community can refine it.'):'Sent to the community identification queue.';
     return '<div class="hero"><div class="eyebrow">SIGHTING SAVED</div><h1>'+title+'</h1><div class="muted">'+sub+'</div><br>'+pill(s.context==='WILD'?(partial?'WILD · NEEDS REFINEMENT':'WILD · UNIDENTIFIED'):'JOURNAL')+'</div><button class="btn" onclick="showSighting(\''+s.id+'\')">VIEW SIGHTING</button>'+(lastCapture&&lastCapture.photos.length?'<button class="btn secondary" onclick="reuseLastPhotos()">LOG ANOTHER CAR FROM THESE PHOTOS</button>':'')+'<button class="btn secondary" onclick="nav(\'home\')">BACK HOME</button>';
   }
   const xp={Common:100,Occasional:125,Scarce:175,Rare:250,Exceptional:400}[c.rarity]||0;
@@ -588,7 +613,7 @@ async function openCommunitySighting(id){
 async function loadBoardDetail(){
   if(!boardSightingId)return;
   const [pr,rr]=await Promise.all([
-    sb.from('identification_proposals').select('id,sighting_id,proposer_id,generation_id,variant_id,proposed_make,proposed_model,status,comment,created_at,vehicle_generations(catalog_key),vehicle_variants(name),proposer:profiles!identification_proposals_proposer_id_fkey(username,display_name,reviewer_group,trusted_tester,identifier_vote_weight),identification_votes(voter_id,vote,created_at,voter:profiles!identification_votes_voter_id_fkey(reviewer_group,trusted_tester,identifier_vote_weight))').eq('sighting_id',boardSightingId).order('created_at',{ascending:true}),
+    sb.from('identification_proposals').select('id,sighting_id,proposer_id,generation_id,variant_id,proposed_make,proposed_model,proposed_trim,proposed_year,status,comment,created_at,vehicle_generations(catalog_key),vehicle_variants(name),proposer:profiles!identification_proposals_proposer_id_fkey(username,display_name,reviewer_group,trusted_tester,identifier_vote_weight),identification_votes(voter_id,vote,created_at,voter:profiles!identification_votes_voter_id_fkey(reviewer_group,trusted_tester,identifier_vote_weight))').eq('sighting_id',boardSightingId).order('created_at',{ascending:true}),
     sb.from('catalogue_requests').select('id,sighting_id,user_id,query_text,notes,status,created_at').eq('sighting_id',boardSightingId).maybeSingle()
   ]);
   if(pr.error)throw pr.error;if(rr.error)throw rr.error;
@@ -614,7 +639,8 @@ function proposalVoteCount(p,vote){return (p.votes||[]).filter(v=>v.vote===vote)
 function myProposalVote(p){return (p.votes||[]).find(v=>v.voter_id===session.user.id)?.vote||'';}
 function proposalCard(p,s){
   const c=p.catalogKey?car(p.catalogKey):null;
-  const partialLabel=!c&&p.proposed_make?String(p.proposed_make)+(p.proposed_model?' '+String(p.proposed_model):''):'';
+  const partialLabel=!c&&p.proposed_make?[p.proposed_make,p.proposed_model].filter(Boolean).join(' '):'';
+  const partialDetail=!c?[p.proposed_trim,p.proposed_year].filter(Boolean).join(' · '):'';
   const agrees=proposalVoteCount(p,'AGREE'),disagrees=proposalVoteCount(p,'DISAGREE'),unsure=proposalVoteCount(p,'UNSURE'),support=proposalSupport(p);
   const mineProposal=p.proposer_id===session.user.id, mineSighting=s.user_id===session.user.id, myVote=myProposalVote(p);
   const status=p.status==='ACCEPTED'?pill('ACCEPTED'):p.status==='REJECTED'?pill('REJECTED'):pill('OPEN');
@@ -622,14 +648,29 @@ function proposalCard(p,s){
   if(p.status==='OPEN'&&!mineSighting&&!mineProposal){
     actions='<div class="toolbar"><span class="chip '+(myVote==='AGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'AGREE\')">AGREE · '+agrees+'</span><span class="chip '+(myVote==='DISAGREE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'DISAGREE\')">DISAGREE · '+disagrees+'</span><span class="chip '+(myVote==='UNSURE'?'on':'')+'" onclick="castIdentificationVote(\''+p.id+'\',\'UNSURE\')">UNSURE · '+unsure+'</span></div>';
   } else if(mineProposal&&p.status==='OPEN') actions='<div class="notice">Your proposal. Other reviewers decide it.</div>';
-  return '<div class="card"><div class="row"><div class="grow"><div class="car">'+(c?escapeHtml(c.make+' '+c.model):escapeHtml(partialLabel||'Partial identification'))+'</div><div class="muted">'+(c?escapeHtml(c.gen+' · '+c.years):'PARTIAL ID · still needs refinement')+(p.variantName?' · '+escapeHtml(p.variantName):'')+'</div><div class="communityOwner">PROPOSED BY '+escapeHtml(p.proposerName)+(p.proposerTrusted?' · TRUSTED TESTER':'')+'</div><div class="muted small">CONFIDENCE '+support.points.toFixed(1)+' / 3 · '+support.people+' / 2 PEOPLE</div></div>'+status+'</div>'+(p.comment?'<div class="muted" style="margin-top:10px">'+escapeHtml(p.comment)+'</div>':'')+actions+'</div>';
+  return '<div class="card"><div class="row"><div class="grow"><div class="car">'+(c?escapeHtml(c.make+' '+c.model):escapeHtml(partialLabel||'Partial identification'))+'</div><div class="muted">'+(c?escapeHtml(c.gen+' · '+c.years):('PARTIAL ID · still needs refinement'+(partialDetail?' · '+escapeHtml(partialDetail):'')))+(p.variantName?' · '+escapeHtml(p.variantName):'')+'</div><div class="communityOwner">PROPOSED BY '+escapeHtml(p.proposerName)+(p.proposerTrusted?' · TRUSTED TESTER':'')+'</div><div class="muted small">CONFIDENCE '+support.points.toFixed(1)+' / 3 · '+support.people+' / 2 PEOPLE</div></div>'+status+'</div>'+(p.comment?'<div class="muted" style="margin-top:10px">'+escapeHtml(p.comment)+'</div>':'')+actions+'</div>';
+}
+function proposalStructuredSearch(){
+  const q=[proposalPartialMake,proposalPartialModel,proposalPartialTrim,proposalPartialYear].map(v=>(v||'').trim()).filter(Boolean).join(' ');
+  const el=document.getElementById('proposalSearchResults');
+  if(!proposalPartialMake.trim()){ if(el)el.innerHTML=''; return; }
+  queueVehicleSearch(q,'proposalSearchResults','proposal');
 }
 function proposalSearchHtml(){
-  if(proposalCarId){const c=car(proposalCarId);return '<div class="card selected"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div><div class="communityOwner">DEX GENERATION</div></div>'+(c.variants.length?'<div class="section">NOTABLE VARIANT · OPTIONAL</div><select class="input" onchange="proposalVariant=this.value;render()"><option value="">Generation only</option>'+c.variants.map(v=>'<option '+(proposalVariant===v?'selected':'')+'>'+escapeHtml(v)+'</option>').join('')+'</select>':'')+'<button class="btn" onclick="submitIdentificationProposal()">SUBMIT THIS ID</button><button class="btn secondary" onclick="proposalCarId=null;proposalVariant=\'\';proposalQuery=\'\';render()">CHOOSE DIFFERENT VEHICLE</button>';
+  if(proposalCarId){
+    const c=car(proposalCarId);
+    return '<div class="card selected"><div class="car">'+escapeHtml(c.make+' '+c.model)+'</div><div class="muted">'+escapeHtml(c.gen+' · '+c.years)+'</div><div class="communityOwner">DEX GENERATION</div></div>'+
+      (c.variants.length?'<div class="section">TRIM / NOTABLE VARIANT · OPTIONAL</div><select class="input" onchange="proposalVariant=this.value;render()"><option value="">Generation only</option>'+c.variants.map(v=>'<option '+(proposalVariant===v?'selected':'')+'>'+escapeHtml(v)+'</option>').join('')+'</select>':'')+
+      '<button class="btn" onclick="submitIdentificationProposal()">SUBMIT THIS ID</button><button class="btn secondary" onclick="proposalCarId=null;proposalVariant=\'\';render()">BACK TO FIELDS</button>';
   }
-  const selectedPartial=proposalPartialMake?'<div class="card selected"><div class="car">'+escapeHtml(proposalPartialMake+(proposalPartialModel?' '+proposalPartialModel:''))+'</div><div class="muted">Partial identification · stays Needs Refinement</div><div class="communityOwner">PARTIAL ID</div></div>':'';
-  const partial='<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(proposalPartialMake)+'" placeholder="e.g. Toyota" oninput="proposalPartialMake=this.value"><div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(proposalPartialModel)+'" placeholder="Leave blank if you do not know" oninput="proposalPartialModel=this.value"><button class="btn secondary" onclick="submitPartialIdentificationProposal()">PROPOSE PARTIAL ID</button><div class="muted small">Make-only is valid. Do not guess the rest.</div></div>';
-  return selectedPartial+'<input class="input" value="'+escapeHtml(proposalQuery)+'" placeholder="Search any make, model, chassis code, nickname…" oninput="proposalQuery=this.value;queueVehicleSearch(this.value,\'proposalSearchResults\',\'proposal\')"><div id="proposalSearchResults" style="margin-top:10px"></div>'+partial;
+  return '<div class="card">'+
+    '<div class="label">MAKE</div><input class="input" value="'+escapeHtml(proposalPartialMake)+'" placeholder="e.g. Mazda" oninput="proposalPartialMake=this.value;proposalStructuredSearch()">'+
+    '<div class="label" style="margin-top:12px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(proposalPartialModel)+'" placeholder="e.g. Mazda3" oninput="proposalPartialModel=this.value;proposalStructuredSearch()">'+
+    '<div class="label" style="margin-top:12px">TRIM / VARIANT · OPTIONAL</div><input class="input" value="'+escapeHtml(proposalPartialTrim)+'" placeholder="e.g. GT, Type R, GXP" oninput="proposalPartialTrim=this.value;proposalStructuredSearch()">'+
+    '<div class="label" style="margin-top:12px">YEAR · OPTIONAL</div><input class="input" type="number" inputmode="numeric" min="1886" max="2100" value="'+escapeHtml(proposalPartialYear)+'" placeholder="e.g. 2012" oninput="proposalPartialYear=this.value;proposalStructuredSearch()">'+
+    '<button class="btn" onclick="submitPartialIdentificationProposal()">PROPOSE WHAT I KNOW</button>'+
+    '<div class="muted small">Only Make is required. Leave anything you do not know blank.</div></div>'+
+    '<div class="section">MATCHING DEX / MODEL ENTRIES</div><div id="proposalSearchResults"><div class="muted small">Start with the make. Matching vehicles will appear here.</div></div>';
 }
 function communitySighting(){
   const s=cloudBoard.find(x=>x.id===boardSightingId);
@@ -638,22 +679,32 @@ function communitySighting(){
   const photos=ps.length?'<div class="gallery">'+ps.map(p=>'<div class="galleryItem"><img src="'+p.data+'" style="'+imgStyle(p)+'"></div>').join('')+'</div>':'<div class="photo"><div class="label">NO PHOTO</div></div>';
   const proposed=boardProposals.length?boardProposals.map(p=>proposalCard(p,s)).join(''):'<div class="card"><div class="muted">No proposed IDs yet.</div></div>';
   const request=boardRequest?'<div class="card"><div class="label">CATALOGUE REQUEST</div><div class="car" style="margin-top:5px">'+escapeHtml(boardRequest.query_text)+'</div><div class="muted">'+escapeHtml(boardRequest.status)+'</div></div>':'<input id="catalogueRequest" class="input" value="'+escapeHtml(catalogueRequestText)+'" placeholder="What vehicle is missing?" oninput="catalogueRequestText=this.value"><button class="btn secondary" onclick="submitCatalogueRequest()">VEHICLE NOT IN CATALOGUE</button>';
-  return back('COMMUNITY REVIEW','idboard')+'<div class="title '+(!s.car?'unknown':'')+'">'+escapeHtml(sightingName(s))+'</div><div class="muted">'+(s.partial?'Submitted as '+escapeHtml(s.partial.make+(s.partial.model?' '+s.partial.model:'')):'Submitted as unknown')+' · '+escapeHtml(s.ownerName||'Tester')+'</div><div style="margin-top:14px">'+photos+'</div><div class="grid" style="margin-top:12px"><div class="card"><div class="label">CONFIDENCE</div><div class="big">'+support.points.toFixed(1)+' / 3</div></div><div class="card"><div class="label">INDEPENDENT PEOPLE</div><div class="big">'+support.people+' / 2</div></div></div><div class="section">PROPOSED IDENTIFICATIONS</div>'+proposed+(mine?'<div class="notice">This is your sighting, so you do not vote on it. Correct it directly if you know the answer now.</div><button class="btn secondary" onclick="showSighting(\''+s.id+'\')">EDIT YOUR SIGHTING</button>':'<div class="section">PROPOSE AN ID</div>'+proposalSearchHtml())+'<div class="section">CAN’T FIND IT?</div>'+request;
+  return back('COMMUNITY REVIEW','idboard')+'<div class="title '+(!s.car?'unknown':'')+'">'+escapeHtml(sightingName(s))+'</div><div class="muted">'+(s.partial?'Submitted as '+escapeHtml(partialIdentityLabel(s.partial))+(partialIdentityDetail(s.partial)?' · '+escapeHtml(partialIdentityDetail(s.partial)):''):'Submitted as unknown')+' · '+escapeHtml(s.ownerName||'Tester')+'</div><div style="margin-top:14px">'+photos+'</div><div class="grid" style="margin-top:12px"><div class="card"><div class="label">CONFIDENCE</div><div class="big">'+support.points.toFixed(1)+' / 3</div></div><div class="card"><div class="label">INDEPENDENT PEOPLE</div><div class="big">'+support.people+' / 2</div></div></div><div class="section">PROPOSED IDENTIFICATIONS</div>'+proposed+(mine?'<div class="notice">This is your sighting, so you do not vote on it. Correct it directly if you know the answer now.</div><button class="btn secondary" onclick="showSighting(\''+s.id+'\')">EDIT YOUR SIGHTING</button>':'<div class="section">PROPOSE AN ID</div>'+proposalSearchHtml())+'<div class="section">CAN’T FIND IT?</div>'+request;
 }
 async function submitIdentificationProposal(){
   const s=cloudBoard.find(x=>x.id===boardSightingId),c=proposalCarId?car(proposalCarId):null;if(!s||!c||cloudBusy)return;
   const generation_id=catalogMap[c.id],variant_id=proposalVariant?variantMap[c.id+'|'+proposalVariant]||null:null;if(!generation_id)return alert('That vehicle is not mapped into the shared catalogue yet.');
   setBusy(true,'Submitting proposed ID…');
-  try{const {error}=await sb.from('identification_proposals').insert({sighting_id:s.id,proposer_id:session.user.id,generation_id,variant_id});if(error)throw error;proposalCarId=null;proposalVariant='';proposalQuery='';proposalPartialMake='';proposalPartialModel='';await loadBoardDetail();}
+  try{const {error}=await sb.from('identification_proposals').insert({sighting_id:s.id,proposer_id:session.user.id,generation_id,variant_id});if(error)throw error;proposalCarId=null;proposalVariant='';proposalQuery='';proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';await loadBoardDetail();}
   catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 async function submitPartialIdentificationProposal(){
-  const s=cloudBoard.find(x=>x.id===boardSightingId),make=(proposalPartialMake||'').trim(),model=(proposalPartialModel||'').trim();
-  if(!s||cloudBusy)return;if(!make)return alert('Enter the make you are confident about.');
-  setBusy(true,'Submitting partial ID…');
+  const s=cloudBoard.find(x=>x.id===boardSightingId),
+        make=(proposalPartialMake||'').trim(),
+        model=(proposalPartialModel||'').trim(),
+        trim=(proposalPartialTrim||'').trim(),
+        year=cleanIdentityYear(proposalPartialYear);
+  if(!s||cloudBusy)return;
+  if(!make)return alert('Enter the make you are confident about.');
+  setBusy(true,'Submitting identification…');
   try{
-    const {error}=await sb.from('identification_proposals').insert({sighting_id:s.id,proposer_id:session.user.id,generation_id:null,variant_id:null,proposed_make:make,proposed_model:model||null});
-    if(error)throw error;proposalPartialMake='';proposalPartialModel='';proposalQuery='';await loadBoardDetail();
+    const {error}=await sb.from('identification_proposals').insert({
+      sighting_id:s.id,proposer_id:session.user.id,generation_id:null,variant_id:null,
+      proposed_make:make,proposed_model:model||null,proposed_trim:trim||null,proposed_year:year
+    });
+    if(error)throw error;
+    proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';proposalQuery='';
+    await loadBoardDetail();
   }catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 async function castIdentificationVote(proposalId,vote){
@@ -703,8 +754,10 @@ function addAnotherFromSighting(){
 function editChooseCar(id){ editDraft.car=id; editDraft.partial=null; editDraft.unknown=false; editDraft.variant=''; render(); window.scrollTo({top:0,behavior:'smooth'}); }
 function editSetContext(x){ editDraft.context=x; render(); }
 function editSetVariant(v){ editDraft.variant=v; render(); }
-function editSetPartialMake(v){ const make=(v||'').trim(); editDraft.car=null; editDraft.variant=''; editDraft.partial=make?{make,model:(editDraft.partial?.model||'')}:null; editDraft.unknown=!make; }
-function editSetPartialModel(v){ const model=(v||'').trim(); if(!editDraft.partial){ if(!model)return; editDraft.partial={make:'',model}; } else editDraft.partial={...editDraft.partial,model}; editDraft.unknown=!editDraft.partial?.make; }
+function editSetPartialMake(v){ const make=(v||'').trim(); editDraft.car=null; editDraft.variant=''; editDraft.partial=make?{make,model:(editDraft.partial?.model||''),trim:(editDraft.partial?.trim||''),year:(editDraft.partial?.year||null)}:null; editDraft.unknown=!make; }
+function editSetPartialModel(v){ const model=(v||'').trim(); if(!editDraft.partial){ if(!model)return; editDraft.partial={make:'',model,trim:'',year:null}; } else editDraft.partial={...editDraft.partial,model}; editDraft.unknown=!editDraft.partial?.make; }
+function editSetPartialTrim(v){ if(!editDraft.partial)return; editDraft.partial={...editDraft.partial,trim:(v||'').trim()}; }
+function editSetPartialYear(v){ if(!editDraft.partial)return; editDraft.partial={...editDraft.partial,year:cleanIdentityYear(v)}; }
 function editMarkUnknown(){ editDraft.car=null; editDraft.partial=null; editDraft.unknown=true; editDraft.variant=''; render(); }
 async function saveEditSighting(){
   const s=state.sightings.find(x=>x.id===selectedSighting); if(!s||cloudBusy)return;
@@ -724,8 +777,13 @@ function editSightingScreen(){
   const s=state.sightings.find(x=>x.id===selectedSighting); if(!s||!editDraft)return back('EDIT SIGHTING','sighting')+'<div class="title">Nothing to edit</div>';
   let identity='';
   if(editDraft.car){ const c=car(editDraft.car); identity='<div class="card selected"><div class="car">'+c.make+' '+c.model+'</div><div class="muted">'+c.gen+' · '+c.years+'</div></div>'; if(c.variants.length) identity+='<div class="section">VARIANT</div><div><span class="chip '+(!editDraft.variant?'on':'')+'" onclick="editSetVariant(\'\')">Not sure</span>'+c.variants.map(v=>'<span class="chip '+(editDraft.variant===v?'on':'')+'" onclick="editSetVariant('+JSON.stringify(v).replaceAll('"','&quot;')+')">'+v+'</span>').join('')+'</div>'; }
-  else if(editDraft.partial) identity='<div class="card"><div class="car unknown">'+editDraft.partial.make+(editDraft.partial.model?' '+editDraft.partial.model:'')+'</div><div class="muted">Partial ID · choose a full Dex entry below when you know it.</div></div>'; else identity='<div class="card"><div class="car unknown">Unknown vehicle</div><div class="muted">Not currently attached to a Dex entry.</div></div>';
-  const partialEdit='<div class="section">ONLY KNOW PART OF IT?</div><div class="card"><div class="label">MAKE</div><input class="input" value="'+escapeHtml(editDraft.partial?.make||'')+'" placeholder="e.g. Toyota" oninput="editSetPartialMake(this.value)"><div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(editDraft.partial?.model||'')+'" placeholder="Leave blank if you do not know" oninput="editSetPartialModel(this.value)"><div class="muted small" style="margin-top:8px">Make-only is a valid refinement. It will stay marked Needs Refinement.</div></div>';
+  else if(editDraft.partial) identity='<div class="card"><div class="car unknown">'+partialIdentityLabel(editDraft.partial)+'</div><div class="muted">Partial ID · choose a full Dex entry below when you know it.</div></div>'; else identity='<div class="card"><div class="car unknown">Unknown vehicle</div><div class="muted">Not currently attached to a Dex entry.</div></div>';
+  const partialEdit='<div class="section">ENTER WHAT YOU KNOW</div><div class="card">'+
+    '<div class="label">MAKE</div><input class="input" value="'+escapeHtml(editDraft.partial?.make||'')+'" placeholder="e.g. Toyota" oninput="editSetPartialMake(this.value)">'+
+    '<div class="label" style="margin-top:10px">MODEL · OPTIONAL</div><input class="input" value="'+escapeHtml(editDraft.partial?.model||'')+'" placeholder="e.g. Camry" oninput="editSetPartialModel(this.value)">'+
+    '<div class="label" style="margin-top:10px">TRIM / VARIANT · OPTIONAL</div><input class="input" value="'+escapeHtml(editDraft.partial?.trim||'')+'" placeholder="e.g. XSE" oninput="editSetPartialTrim(this.value)">'+
+    '<div class="label" style="margin-top:10px">YEAR · OPTIONAL</div><input class="input" type="number" inputmode="numeric" min="1886" max="2100" value="'+escapeHtml(editDraft.partial?.year||'')+'" placeholder="e.g. 2018" oninput="editSetPartialYear(this.value)">'+
+    '<div class="muted small" style="margin-top:8px">Make-only is valid. Leave unknown fields blank.</div></div>';
   return '<div class="editPad">'+back('EDIT SIGHTING','sighting')+'<div class="title">Correct sighting</div>'+identity+'<div class="notice" style="margin:10px 0 4px">Choose the best identity you can support. Do not guess the rest.</div><div class="section">SEARCH VEHICLES</div><input class="input" value="'+escapeHtml(editQuery)+'" placeholder="Search make, model, chassis code…" oninput="editFilterCars(this.value)"><div class="muted small" style="margin-top:7px">Searches 5,500+ global car models plus RoadDex generation entries.</div><div id="editcarlist"></div>'+partialEdit+'<button class="btn secondary" onclick="editMarkUnknown()">MARK AS UNKNOWN</button><div class="section">CONTEXT</div>'+contexts.map(x=>contextCard(x,editDraft.context,'editSetContext')).join('')+'<button class="btn danger" onclick="deleteSighting()">DELETE SIGHTING</button></div><div class="floatingSave"><button class="btn" onclick="saveEditSighting()">SAVE CORRECTION</button></div>';
 }
 function editFilterCars(q){ editQuery=q; return queueVehicleSearch(q,'editcarlist','edit'); }
@@ -734,7 +792,7 @@ function sighting(){
   const c=s.car?car(s.car):null;
   const contextNames={WILD:'🌲 Wild',EVENT:'🎪 Car show / organized meet',DISPLAY:'🏛 Dealer / museum / display',TRANSPORTED:'🚚 Transported / trailered',JOURNAL:'📖 Journal'};
   const sourceNames={CAMERA:'RoadDex camera',LIBRARY:'Imported from photo library',MIXED:'Camera + library',DEMO:'Demo capture'};
-  return back('SIGHTING')+'<div class="title '+(!c?'unknown':'')+'">'+sightingName(s)+'</div><div class="muted">'+(c?c.gen+' · '+c.years:(s.partial?'Partial identification · needs refinement':'Not identified yet'))+'</div><br>'+pill(c?(s.context==='WILD'?c.rarity+' · Ontario':s.context):(s.partial?'NEEDS REFINEMENT':'UNIDENTIFIED'))+'<div style="margin-top:14px">'+galleryHtml(s)+'</div>'+ 
+  return back('SIGHTING')+'<div class="title '+(!c?'unknown':'')+'">'+sightingName(s)+'</div><div class="muted">'+(c?c.gen+' · '+c.years:(s.partial?('Partial identification'+(partialIdentityDetail(s.partial)?' · '+partialIdentityDetail(s.partial):'')+' · needs refinement'):'Not identified yet'))+'</div><br>'+pill(c?(s.context==='WILD'?c.rarity+' · Ontario':s.context):(s.partial?'NEEDS REFINEMENT':'UNIDENTIFIED'))+'<div style="margin-top:14px">'+galleryHtml(s)+'</div>'+ 
     (s.photos.length<3?'<label class="btn secondary" style="display:block;text-align:center">ADD PHOTO<input class="hidden" type="file" accept="image/*" multiple onchange="addSightingPhotos(event)"></label>':'')+
     '<div class="section">SIGHTING DETAILS</div><div class="card"><div class="label">CONTEXT</div><div class="car" style="margin-top:4px">'+(contextNames[s.context]||s.context)+'</div></div>'+ 
     (s.variant?'<div class="card"><div class="label">CLAIMED VARIANT</div><div class="car" style="margin-top:4px">'+s.variant+'</div></div>':'')+(s.tags&&s.tags.length?'<div class="card"><div class="label">TAGS</div><div style="margin-top:6px">'+s.tags.map(pill).join(' ')+'</div></div>':'')+
@@ -802,7 +860,7 @@ async function rowToLocal(row){
   const photos=[];for(const p of ps){photos.push({data:await signedPhotoUrl(p.storage_path),storagePath:p.storage_path,cloudPhotoId:p.id,focusX:Number(p.focus_x)*100,focusY:Number(p.focus_y)*100,zoom:Number(p.zoom)||1,source:p.source||row.source||'LIBRARY'});}
   const coverIdx=Math.max(0,ps.findIndex(p=>p.cover));
   const catalogKey=row.vehicle_generations?.catalog_key||null;
-  return {id:row.id,user_id:row.user_id,car:catalogKey,partial:row.identity_status==='PARTIAL'?{make:row.partial_make||'',model:row.partial_model||''}:null,unknown:row.identity_status==='UNKNOWN',identityStatus:row.identity_status,variant:row.vehicle_variants?.name||'',tags:(row.sighting_tags||[]).map(x=>x.tag),context:row.context,source:row.source,photos,coverIndex:coverIdx,at:row.captured_at||row.created_at,isNew:false};
+  return {id:row.id,user_id:row.user_id,car:catalogKey,partial:row.identity_status==='PARTIAL'?{make:row.partial_make||'',model:row.partial_model||'',trim:row.partial_trim||'',year:row.partial_year||null}:null,unknown:row.identity_status==='UNKNOWN',identityStatus:row.identity_status,variant:row.vehicle_variants?.name||'',tags:(row.sighting_tags||[]).map(x=>x.tag),context:row.context,source:row.source,photos,coverIndex:coverIdx,at:row.captured_at||row.created_at,isNew:false};
 }
 async function loadOwnSightings(){
   const {data,error}=await sb.from('sightings').select('*,vehicle_generations(catalog_key),vehicle_variants(name),sighting_photos(*),sighting_tags(tag)').eq('user_id',session.user.id).order('captured_at',{ascending:false});if(error)throw error;
@@ -831,14 +889,14 @@ async function cloudUploadPhoto(s,p,index){
 }
 async function cloudSaveSighting(s){
   if(!session)throw new Error('Not signed in.');if(!/^[0-9a-f-]{36}$/i.test(String(s.id)))s.id=crypto.randomUUID();
-  const payload={id:s.id,user_id:session.user.id,generation_id:generationIdFor(s),variant_id:variantIdFor(s),partial_make:s.partial?.make||null,partial_model:s.partial?.model||null,identity_status:s.car?'IDENTIFIED':(s.partial?'PARTIAL':'UNKNOWN'),context:s.context,source:s.source,region_code:'CA-ON',captured_at:s.at||new Date().toISOString()};
+  const payload={id:s.id,user_id:session.user.id,generation_id:generationIdFor(s),variant_id:variantIdFor(s),partial_make:s.partial?.make||null,partial_model:s.partial?.model||null,partial_trim:s.partial?.trim||null,partial_year:cleanIdentityYear(s.partial?.year),identity_status:s.car?'IDENTIFIED':(s.partial?'PARTIAL':'UNKNOWN'),context:s.context,source:s.source,region_code:'CA-ON',captured_at:s.at||new Date().toISOString()};
   const {error}=await sb.from('sightings').insert(payload);if(error)throw error;
   for(let i=0;i<getPhotos(s).length;i++)await cloudUploadPhoto(s,s.photos[i],i);
   if(s.tags?.length){const {error:te}=await sb.from('sighting_tags').insert(s.tags.map(tag=>({sighting_id:s.id,tag})));if(te)throw te;}
   s.user_id=session.user.id;return s;
 }
 async function cloudUpdateSighting(s){
-  const payload={generation_id:generationIdFor(s),variant_id:variantIdFor(s),partial_make:s.partial?.make||null,partial_model:s.partial?.model||null,identity_status:s.car?'IDENTIFIED':(s.partial?'PARTIAL':'UNKNOWN'),context:s.context,source:s.source,updated_at:new Date().toISOString()};
+  const payload={generation_id:generationIdFor(s),variant_id:variantIdFor(s),partial_make:s.partial?.make||null,partial_model:s.partial?.model||null,partial_trim:s.partial?.trim||null,partial_year:cleanIdentityYear(s.partial?.year),identity_status:s.car?'IDENTIFIED':(s.partial?'PARTIAL':'UNKNOWN'),context:s.context,source:s.source,updated_at:new Date().toISOString()};
   const {error}=await sb.from('sightings').update(payload).eq('id',s.id);if(error)throw error;
 }
 async function cloudUpdatePhotoFrame(p){const {error}=await sb.from('sighting_photos').update({focus_x:(Number(p.focusX)||50)/100,focus_y:(Number(p.focusY)||50)/100,zoom:Number(p.zoom)||1}).eq('id',p.cloudPhotoId);if(error)throw error;}
