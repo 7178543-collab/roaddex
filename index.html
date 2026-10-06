@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <link rel="manifest" href="/manifest.webmanifest" />
 <link rel="apple-touch-icon" href="/icon-192.png" />
-<title>RoadDex Prototype · Update 16.3</title>
+<title>RoadDex Prototype · Update 16.4</title>
 <style>
 :root{--bg:#0a0e0d;--panel:#131a17;--panel2:#1b2520;--text:#f3f7f4;--muted:#91a097;--accent:#b7f542;--line:#28352e;--danger:#ff726f}
 *{box-sizing:border-box}html,body{touch-action:manipulation;-webkit-text-size-adjust:100%}button,a,input,select,textarea,[onclick],.choice,.chip{touch-action:manipulation}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}.app{max-width:520px;margin:0 auto;min-height:100vh;padding:env(safe-area-inset-top) 18px calc(30px + env(safe-area-inset-bottom))}.top{padding:32px 0 18px}.logo{font-size:38px;font-weight:1000;letter-spacing:3px}.tag{font-size:11px;color:var(--accent);font-weight:900;letter-spacing:2px}.version{font-size:10px;color:var(--muted);font-weight:900;letter-spacing:1.4px;margin-top:7px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:15px;margin-bottom:10px}.label{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1px}.big{font-size:29px;font-weight:1000}.btn{width:100%;border:0;border-radius:14px;background:var(--accent);color:#0b120e;padding:15px;font-weight:1000;font-size:15px;letter-spacing:.4px;margin:6px 0;cursor:pointer}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.danger{background:transparent;color:var(--danger);border:1px solid #623432}.section{color:var(--muted);font-size:11px;font-weight:900;letter-spacing:1.4px;margin:22px 0 9px}.muted{color:var(--muted);line-height:1.45}.pill{display:inline-block;background:var(--panel2);color:var(--accent);border-radius:999px;padding:5px 9px;font-size:10px;font-weight:900;text-transform:uppercase}.row{display:flex;gap:12px;align-items:center}.grow{flex:1;min-width:0}.car{font-size:17px;font-weight:900}.title{font-size:27px;font-weight:1000;margin:8px 0}.input{width:100%;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px;font-size:16px}.back{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:92px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text);font-weight:1000;padding:11px 16px;margin:6px 0 10px;font-size:16px;letter-spacing:.2px;cursor:pointer;touch-action:manipulation}.back:active{transform:scale(.98);border-color:var(--accent)}.context.selected{border-color:var(--accent);background:#172019}.photo{height:260px;border-radius:20px;background:var(--panel2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:14px}.photo img{width:100%;height:100%;object-fit:cover}.photo .glyph{font-size:70px;color:var(--accent)}.dexrow.missing{opacity:.5}.thumb{width:52px;height:52px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;color:var(--accent);font-weight:1000;overflow:hidden;flex:0 0 52px}.thumb img{width:100%;height:100%;object-fit:cover}.histphoto{width:72px;height:72px;border-radius:12px;object-fit:cover;border:1px solid var(--line);flex:0 0 72px}.maker{color:var(--accent);font-size:13px;font-weight:1000;letter-spacing:1px;margin:18px 0 8px}.hero{text-align:center;padding:34px 0}.hero .eyebrow{color:var(--accent);font-weight:1000;letter-spacing:3px}.hero h1{font-size:38px;margin:12px 0 4px}.xp{font-size:25px;color:var(--accent);font-weight:1000;margin:20px}.choice{cursor:pointer}.chip{display:inline-block;background:var(--panel);border:1px solid var(--line);padding:9px 12px;border-radius:999px;margin:4px;color:var(--text);font-weight:800;cursor:pointer}.chip.on{border-color:var(--accent);background:#192319}.notice{border-left:3px solid var(--accent);padding-left:12px;color:var(--muted);font-size:13px}.hidden{display:none!important}.photoStrip{display:flex;gap:9px;overflow-x:auto;padding:2px 0 10px}.photoMini{width:82px;height:82px;border-radius:14px;border:2px solid var(--line);overflow:hidden;position:relative;flex:0 0 82px;background:var(--panel2)}.photoMini.cover{border-color:var(--accent)}.photoMini img{width:100%;height:100%;object-fit:cover}.photoMini .num{position:absolute;bottom:4px;left:4px;background:#000b;color:#fff;border-radius:8px;padding:2px 6px;font-size:10px;font-weight:900}.focusPreview{height:360px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.focusPreview img{width:100%;height:100%;object-fit:cover}.arrowGrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;max-width:280px;margin:14px auto}.arrowGrid button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:13px;font-size:20px}.zoomControls{display:grid;grid-template-columns:54px 1fr 54px;gap:10px;align-items:center;margin:14px 0}.zoomControls button{border:1px solid var(--line);background:var(--panel2);color:var(--text);border-radius:12px;padding:12px;font-size:22px;font-weight:900}.zoomControls input[type=range]{width:100%;accent-color:var(--accent)}.accentSlider{width:100%;accent-color:var(--accent);margin:12px 0 4px}.accentTrack{height:10px;border-radius:999px;background:linear-gradient(90deg,hsl(0 90% 61%),hsl(60 90% 61%),hsl(120 90% 61%),hsl(180 90% 61%),hsl(240 90% 61%),hsl(300 90% 61%),hsl(360 90% 61%));margin-top:8px}.accentPreview{width:34px;height:34px;border-radius:50%;background:var(--accent);border:2px solid var(--text);flex:0 0 34px}.zoomReadout{text-align:center;color:var(--accent);font-size:12px;font-weight:1000;letter-spacing:1px;margin-top:-6px}.focusPreview img,.photo img,.thumb img,.photoMini img,.galleryItem img{will-change:transform}.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.toolbar .chip{margin:0}.searchRow{display:flex;gap:8px;align-items:center}.dexSearch{margin-top:14px;background:#101713;border:2px solid var(--accent);border-radius:18px;padding:12px}.dexSearch .input{border:0;background:#0c120f;padding:13px 14px}.dexSearchLabel{color:var(--accent);font-size:11px;font-weight:1000;letter-spacing:1.4px;margin:0 0 8px 2px}.small{font-size:12px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:9px}.galleryItem{position:relative;height:170px;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--panel2)}.galleryItem img{width:100%;height:100%;object-fit:cover}.galleryItem .badge{position:absolute;left:8px;bottom:8px;background:#000c;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:900}.ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.unknown{color:#ffd36c}.dataTools{display:flex;gap:8px;margin-top:22px}.dataTools>*{flex:1}.floatingSave{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom));width:min(484px,calc(100% - 36px));z-index:60;padding:8px;background:rgba(10,14,13,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px #0008;backdrop-filter:blur(10px)}.floatingSave .btn{margin:0}.editPad{padding-bottom:92px}
@@ -25,7 +25,26 @@
 <body><main id="app" class="app"></main>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-const UPDATE = '16.3';
+const UPDATE = '16.4';
+
+let toastTimer;
+function showToast(message,error=false,retry=null){
+  let el=document.getElementById('roadDexToast');
+  if(!el){el=document.createElement('div');el.id='roadDexToast';document.body.appendChild(el);}
+  el.setAttribute('role',error?'alert':'status');el.textContent=message;
+  el.style.cssText='position:fixed;bottom:24px;left:16px;right:16px;max-width:600px;margin:auto;padding:16px;background:'+(error?'#592323':'#183e2a')+';color:white;border:1px solid #888;border-radius:12px;z-index:10000;box-shadow:0 4px 20px #0008';
+  if(retry){const button=document.createElement('button');button.textContent='RETRY';button.className='btn secondary';button.onclick=retry;el.appendChild(button);}
+  clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.remove(),error?10000:4500);
+}
+async function showDiagnostics(){
+  let worker='Not supported';
+  try{if('serviceWorker' in navigator){const registration=await navigator.serviceWorker.getRegistration();worker=registration?(registration.active?'Active':registration.installing?'Installing':'Registered'):'Not registered';worker+=' / '+(navigator.serviceWorker.controller?'controlling this page':'not controlling this page');}}catch{worker='Status unavailable';}
+  const message='RoadDex '+UPDATE+'\nMode: '+(isStandalone()?'Installed app':'Browser')+'\nNetwork: '+(navigator.onLine?'Online':'Offline')+'\nService worker: '+worker+'\nPhotos: standard 1600 px / 82%; batch 1280 px / 76%\nBrowser / OS: '+navigator.userAgent;
+  alert(message);
+}
+let pendingSubmit=null;
+let pendingBatch=null;
+
 const STORAGE_KEY = 'roaddex-demo';
 const LEGACY_MIGRATION_KEY = 'roaddex-v10-migrated';
 const SUPABASE_URL = 'https://eixtfpkzipdshzpotzsy.supabase.co';
@@ -50,7 +69,7 @@ window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;if(sessio
 async function installRoadDex(){
   if(isStandalone()){alert('RoadDex is already running as an installed app.');return;}
   if(isIOS()){
-    if(isIOSSafari()) alert('On iPhone: tap the Share button in Safari, choose “Add to Home Screen”, then tap Add.');
+    if(isIOSSafari()) alert('On iPhone: tap the Share button in Safari, choose “Add to Home Screen”, then tap Add. If “Open as Web App” appears, leave it enabled. Launch RoadDex from the new Home Screen icon.');
     else alert('On iPhone, open RoadDex in Safari first. Then tap Share → Add to Home Screen → Add.');
     return;
   }
@@ -534,7 +553,7 @@ function profileScreen(){
     '<div class="grid"><div class="card"><div class="label">WILD SIGHTINGS</div><div class="big">'+Number(p.wild_sightings||0).toLocaleString()+'</div></div><div class="card"><div class="label">WILD DEX</div><div class="big">'+Number(p.wild_dex||0).toLocaleString()+'</div></div></div>'+
     '<div class="card"><div class="label">CONFIRMED IDENTIFICATIONS</div><div class="big">'+Number(p.successful_ids||0).toLocaleString()+'</div></div>'+
     (p.trusted_tester?'<div class="notice"><b>Trusted Tester</b> · identification confidence weight '+Number(p.identifier_vote_weight||1).toFixed(1)+'×.</div>':'')+
-    (own?'<div class="section">APPEARANCE</div><div class="card"><div class="row"><div class="accentPreview"></div><div class="grow"><div class="car">Accent colour</div><div class="muted small">Keeps the dark theme and changes the green accent only.</div></div><div id="accentHueValue" class="label">'+Math.round(accentHue())+'°</div></div><div class="accentTrack"></div><input class="accentSlider" type="range" min="0" max="360" value="'+accentHue()+'" oninput="setAccentHue(this.value)"><button class="btn secondary" onclick="resetAccentHue()">RESET TO GREEN</button></div><button class="btn secondary" onclick="openLeaderboards()">VIEW LEADERBOARDS</button>':'');
+    (own?'<button class="btn secondary" onclick="showDiagnostics()">APP DIAGNOSTICS · '+UPDATE+'</button><div class="section">APPEARANCE</div><div class="card"><div class="row"><div class="accentPreview"></div><div class="grow"><div class="car">Accent colour</div><div class="muted small">Keeps the dark theme and changes the green accent only.</div></div><div id="accentHueValue" class="label">'+Math.round(accentHue())+'°</div></div><div class="accentTrack"></div><input class="accentSlider" type="range" min="0" max="360" value="'+accentHue()+'" oninput="setAccentHue(this.value)"><button class="btn secondary" onclick="resetAccentHue()">RESET TO GREEN</button></div><button class="btn secondary" onclick="openLeaderboards()">VIEW LEADERBOARDS</button>':'');
 }
 
 function home(){
@@ -552,7 +571,7 @@ function home(){
     '<div class="section">RECENT SIGHTINGS</div>'+(recent || '<div class="card"><div class="car">Nothing spotted yet.</div><div class="muted">The automotive wilderness remains tragically unharvested.</div></div>')+
     '<div class="dataTools"><button class="btn secondary small" onclick="exportData()">EXPORT BACKUP</button><button class="btn secondary small" onclick="signOutCloud()">SIGN OUT</button></div>';
 }
-function startCapture(){ capture={photos:[],coverIndex:0,context:'WILD'}; selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; sightingTags=[]; multiCarCount=0; nav('capture'); }
+function startCapture(){ if(pendingSubmit){screen='identify';render();showToast('An upload is unfinished. Use Save to retry it, or Clear photos to discard the remaining upload.',true);return;}capture={photos:[],coverIndex:0,context:'WILD'}; selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; sightingTags=[]; multiCarCount=0; nav('capture'); }
 function startBatchUnknown(){ batchUnknown={photos:[],context:'WILD'}; nav('batchunknown'); }
 function setBatchContext(x){ batchUnknown.context=x; render(); }
 const contexts = [
@@ -584,29 +603,32 @@ function captureScreen(){
   }
   return back('CAPTURE')+'<div class="title">Spot a car</div>'+body;
 }
-function processImageFile(f,max=760,quality=0.56){
-  return new Promise(resolve=>{
+function processImageFile(f,max=1600,quality=0.82){
+  return new Promise((resolve,reject)=>{
     const r=new FileReader();
+    r.onerror=()=>reject(new Error("Could not read this photo. Choose it again."));
     r.onload=()=>{
       const img=new Image();
       img.onload=()=>{
+        try{
         let w=img.width,h=img.height;
         if(w>h&&w>max){h=Math.round(h*max/w);w=max}else if(h>=w&&h>max){w=Math.round(w*max/h);h=max}
         const canvas=document.createElement('canvas'); canvas.width=w; canvas.height=h;
         canvas.getContext('2d').drawImage(img,0,0,w,h);
         resolve(canvas.toDataURL('image/jpeg',quality));
+        }catch(err){reject(err);}
       };
-      img.onerror=()=>resolve(r.result); img.src=r.result;
+      img.onerror=()=>reject(new Error("This photo format could not be opened. Try a JPEG or PNG copy.")); img.src=r.result;
     };
     r.readAsDataURL(f);
   });
 }
 async function loadPhotos(e,source){
   const files=[...(e.target.files||[])].slice(0,Math.max(0,3-capture.photos.length));
-  for(const f of files){ const data=await processImageFile(f); capture.photos.push({data,focusX:50,focusY:50,zoom:1,source}); }
+  try{for(const f of files){ const data=await processImageFile(f); capture.photos.push({data,focusX:50,focusY:50,zoom:1,source}); }}catch(err){cloudError(err);}
   if(capture.coverIndex>=capture.photos.length)capture.coverIndex=0; render();
 }
-function clearCapturePhotos(){ capture.photos=[]; capture.coverIndex=0; render(); }
+function clearCapturePhotos(){ pendingSubmit=null;capture.photos=[]; capture.coverIndex=0; render(); }
 function useDemo(){ capture.photos=[{data:'',focusX:50,focusY:50,zoom:1,source:'DEMO'}]; capture.coverIndex=0; render(); }
 
 function batchUnknownScreen(){
@@ -615,26 +637,26 @@ function batchUnknownScreen(){
   return back('BATCH IMPORT')+'<div class="title">Add a pile of unknown cars</div><div class="muted">One photo = one separate sighting. Every photo goes straight to the Identification Board as <b>I DON’T KNOW</b>.</div>'+previews+
     '<div class="section">WHERE WERE THEY?</div>'+contexts.map(x=>contextCard(x,batchUnknown.context,'setBatchContext')).join('')+
     '<label class="btn" style="display:block;text-align:center">'+(count?'REPLACE PHOTOS':'CHOOSE PHOTOS')+'<input class="hidden" type="file" accept="image/*" multiple onchange="loadBatchUnknown(event)"></label>'+ 
-    (count?'<button class="btn" onclick="commitBatchUnknown()">ADD ALL '+count+' AS I DON’T KNOW</button><button class="btn secondary" onclick="clearBatchUnknown()">CLEAR BATCH</button>':'<div class="notice" style="margin-top:12px">Select up to 20 photos. This prototype compresses them before saving so browser storage does not immediately collapse under the weight of modern phone cameras.</div>');
+    (count?'<button class="btn" onclick="commitBatchUnknown()">ADD ALL '+count+' AS I DON’T KNOW</button><button class="btn secondary" onclick="clearBatchUnknown()">CLEAR BATCH</button>':'<div class="notice" style="margin-top:12px">Select up to 20 photos. Photos are resized to 1280 px for batch imports while retaining detail for identification.</div>');
 }
 async function loadBatchUnknown(e){
   const files=[...(e.target.files||[])].slice(0,20);
-  batchUnknown.photos=[];
-  for(const f of files){ const data=await processImageFile(f,560,0.48); batchUnknown.photos.push({data,focusX:50,focusY:50,zoom:1,source:'LIBRARY'}); }
+  batchUnknown.photos=[];pendingBatch=null;
+  try{for(const f of files){ const data=await processImageFile(f,1280,0.76); batchUnknown.photos.push({data,focusX:50,focusY:50,zoom:1,source:'LIBRARY'}); }}catch(err){cloudError(err);}
   render();
 }
-function clearBatchUnknown(){ batchUnknown.photos=[]; render(); }
+function clearBatchUnknown(){ batchUnknown.photos=[];pendingBatch=null; render(); }
 async function commitBatchUnknown(){
   if(!batchUnknown.photos.length||cloudBusy)return;
   setBusy(true,'Uploading '+batchUnknown.photos.length+' mystery cars…');
   try{
     const now=Date.now();
-    const created=batchUnknown.photos.map((p,i)=>({id:crypto.randomUUID(),car:null,partial:null,unknown:true,identityStatus:'UNKNOWN',variant:'',tags:[],context:batchUnknown.context,source:'LIBRARY',photos:[deepClone(p)],coverIndex:0,at:new Date(now+i).toISOString(),isNew:false}));
+    const created=pendingBatch||(pendingBatch=batchUnknown.photos.map((p,i)=>({id:crypto.randomUUID(),car:null,partial:null,unknown:true,identityStatus:'UNKNOWN',variant:'',tags:[],context:batchUnknown.context,source:'LIBRARY',photos:[deepClone(p)],coverIndex:0,at:new Date(now+i).toISOString(),isNew:false})));
     for(const item of created) await cloudSaveSighting(item);
-    state.sightings=[...created.reverse(),...state.sightings]; save();
+    state.sightings=[...created.slice().reverse(),...state.sightings.filter(s=>!created.some(c=>c.id===s.id))]; save();pendingBatch=null;
     const n=created.length; batchUnknown={photos:[],context:'WILD'};
-    await loadCommunityBoard();
-    alert(n+' unknown sighting'+(n===1?'':'s')+' added to the shared Identification Board.');
+    try{await loadCommunityBoard();}catch(err){console.error(err);}
+    showToast(n+' sightings saved');
     screen='idboard';
   }catch(err){ cloudError(err); }
   finally{setBusy(false);render();}
@@ -710,17 +732,18 @@ function makeSighting(carId,unknownFlag,partial=null){
 function resetIdentityFields(){ selected=null; variant=''; identifyMode=null; identityQuery=''; partialMake=''; partialModel=''; partialTrim=''; partialYear=''; sightingTags=[]; }
 async function finishSubmit(s,addAnother=false){
   if(cloudBusy)return;
+  if(pendingSubmit){s=pendingSubmit.s;addAnother=pendingSubmit.addAnother;}else pendingSubmit={s,addAnother};
   const savedCapture={photos:deepClone(capture.photos),coverIndex:capture.coverIndex,context:capture.context};
   const loggedNow=multiCarCount+1;
   lastCapture={...deepClone(savedCapture),loggedCount:loggedNow};
   setBusy(true,'Saving sighting…');
   try{
-    await cloudSaveSighting(s);
+    await cloudSaveSighting(s);pendingSubmit=null;showToast('Sighting saved');
     state.sightings.unshift(s); selectedSighting=s.id; save(); resetIdentityFields();
-    await loadCommunityBoard();
+    try{await loadCommunityBoard();}catch(err){console.error(err);showToast('Sighting saved. Board refresh failed; refresh it later.',true);}
     if(addAnother){ capture=deepClone(savedCapture); multiCarCount=loggedNow; screen='identify'; }
     else { capture={photos:[],coverIndex:0,context:'WILD'}; multiCarCount=0; screen='discovery'; }
-  }catch(err){ cloudError(err); }
+  }catch(err){console.error(err);showToast('Upload unfinished. Keep this page open and retry to finish the same sighting.',true,()=>finishSubmit(s,addAnother));}
   finally{setBusy(false);render();window.scrollTo(0,0);}
 }
 function submitKnown(addAnother=false){ return finishSubmit(makeSighting(selected,false,null),addAnother); }
@@ -843,7 +866,7 @@ async function submitIdentificationProposal(){
   const s=cloudBoard.find(x=>x.id===boardSightingId),c=proposalCarId?car(proposalCarId):null;if(!s||!c||cloudBusy)return;
   const generation_id=catalogMap[c.id],variant_id=proposalVariant?variantMap[c.id+'|'+proposalVariant]||null:null;if(!generation_id)return alert('That vehicle is not mapped into the shared catalogue yet.');
   setBusy(true,'Submitting proposed ID…',false);
-  try{const {error}=await sb.from('identification_proposals').insert({sighting_id:s.id,proposer_id:session.user.id,generation_id,variant_id});if(error)throw error;proposalCarId=null;proposalVariant='';proposalQuery='';proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';await loadBoardDetail();}
+  try{const {error}=await sb.from('identification_proposals').insert({sighting_id:s.id,proposer_id:session.user.id,generation_id,variant_id});if(error)throw error;proposalCarId=null;proposalVariant='';proposalQuery='';proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';showToast('ID proposed');await loadBoardDetail();}
   catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 async function submitPartialIdentificationProposal(){
@@ -854,15 +877,15 @@ async function submitPartialIdentificationProposal(){
     const resolved=await resolveStructuredIdentity(make,model,year,trim);
     const payload={sighting_id:sight.id,proposer_id:session.user.id,generation_id:resolved?.generation_id||null,variant_id:resolved?.variant_id||null,proposed_make:resolved?null:make,proposed_model:resolved?null:(model||null),proposed_trim:trim||null,proposed_year:year};
     const {error}=await sb.from('identification_proposals').insert(payload);if(error)throw error;
-    proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';proposalQuery='';await loadBoardDetail();
+    proposalPartialMake='';proposalPartialModel='';proposalPartialTrim='';proposalPartialYear='';proposalQuery='';showToast('ID proposed');await loadBoardDetail();
   }catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 async function castIdentificationVote(proposalId,vote){
   if(cloudBusy)return;setBusy(true,'Saving review…',false);
   try{
     const {error}=await sb.from('identification_votes').upsert({proposal_id:proposalId,voter_id:session.user.id,vote},{onConflict:'proposal_id,voter_id'});if(error)throw error;
-    await Promise.all([loadCommunityBoard(),loadBoardDetail()]);
-    if(!cloudBoard.some(x=>x.id===boardSightingId)){screen='idboard';await loadOwnSightings();alert('Consensus reached. The sighting was identified automatically.');}
+    showToast('Vote recorded');await Promise.all([loadCommunityBoard(),loadBoardDetail()]);
+    if(!cloudBoard.some(x=>x.id===boardSightingId)){screen='idboard';await loadOwnSightings();showToast('Consensus reached. Sighting identified.');}
   }catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 async function submitCatalogueRequest(){
@@ -898,8 +921,8 @@ async function addSightingPhotos(e){
   const files=[...(e.target.files||[])].slice(0,Math.max(0,3-s.photos.length));
   setBusy(true,'Uploading photo…');
   try{
-    for(const f of files){ const data=await processImageFile(f); const p={data,focusX:50,focusY:50,zoom:1,source:'LIBRARY'}; s.photos.push(p); await cloudUploadPhoto(s,p,s.photos.length-1); }
-    s.source=sourceSummary(s.photos); await sb.from('sightings').update({source:s.source}).eq('id',s.id); save();
+    for(const f of files){ const data=await processImageFile(f); const p={data,focusX:50,focusY:50,zoom:1,source:'LIBRARY'}; await cloudUploadPhoto(s,p,s.photos.length); s.photos.push(p); }
+    s.source=sourceSummary(s.photos); const {error}=await sb.from('sightings').update({source:s.source}).eq('id',s.id);if(error)throw error; save();showToast('Photo uploaded');
   }catch(err){cloudError(err);}finally{setBusy(false);render();}
 }
 function beginEditSighting(){ const s=state.sightings.find(x=>x.id===selectedSighting); if(!s)return; editQuery=''; editDraft={car:s.car,partial:s.partial||null,unknown:!s.car&&!s.partial,variant:s.variant||'',context:s.context}; screen='editSighting'; render(); window.scrollTo(0,0); }
@@ -974,7 +997,7 @@ function vehicle(){
 function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function setBusy(on,text='Syncing…',blocking=true){cloudBusy=on;cloudBusyText=text;cloudBusyBlocking=!!blocking;document.documentElement.classList.toggle('busyLock',!!on&&!!blocking);document.body?.classList.toggle('busyLock',!!on&&!!blocking);render();}
 function busyOverlay(){if(!cloudBusy)return '';const mode=cloudBusyBlocking?'blocking':'passive';const sub=cloudBusyBlocking?'Please wait while this finishes.':'You can keep looking around while this saves.';return '<div class="busy '+mode+'"><div class="busybox"><div class="car">'+escapeHtml(cloudBusyText)+'</div><div class="muted" style="margin-top:6px">'+sub+'</div></div></div>';}
-function cloudError(err){console.error(err);alert('Cloud error: '+(err?.message||String(err)));}
+function cloudError(err){console.error(err);showToast('Could not finish: '+(err?.message||String(err))+'. Try again.',true);}
 function authScreen(){
   const sign=authMode==='SIGNIN';
   return '<div class="authbox"><div class="logo">ROADDEX</div><div class="tag">SHARED TEST · UPDATE '+UPDATE+'</div><div class="title">'+(sign?'Tester sign in':'Create tester account')+'</div><div class="muted">Your sightings now live in the shared RoadDex test database instead of being imprisoned in one browser.</div><div class="authswitch"><span class="chip '+(sign?'on':'')+'" onclick="authMode=\'SIGNIN\';render()">SIGN IN</span><span class="chip '+(!sign?'on':'')+'" onclick="authMode=\'SIGNUP\';render()">CREATE ACCOUNT</span></div>'+
@@ -1040,21 +1063,21 @@ async function loadCloud(){
 function generationIdFor(s){return s.car?catalogMap[s.car]||null:null;}
 function variantIdFor(s){return s.car&&s.variant?variantMap[s.car+'|'+s.variant]||null:null;}
 async function cloudUploadPhoto(s,p,index){
-  if(!p?.data)return p;
+  if(!p?.data||p.cloudPhotoId)return p;
   const blob=await fetch(p.data).then(r=>r.blob());
   const ext=blob.type==='image/png'?'png':blob.type==='image/webp'?'webp':'jpg';
   const path=session.user.id+'/'+s.id+'/'+String(index+1).padStart(2,'0')+'-'+crypto.randomUUID()+'.'+ext;
   const {error:ue}=await sb.storage.from('sightings').upload(path,blob,{contentType:blob.type||'image/jpeg',upsert:false});if(ue)throw ue;
   const payload={sighting_id:s.id,storage_path:path,cover:index===(s.coverIndex||0),focus_x:(Number(p.focusX)||50)/100,focus_y:(Number(p.focusY)||50)/100,zoom:Number(p.zoom)||1,source:p.source||s.source||'LIBRARY'};
-  const {data:pr,error:pe}=await sb.from('sighting_photos').insert(payload).select('id').single();if(pe)throw pe;
+  const {data:pr,error:pe}=await sb.from('sighting_photos').insert(payload).select('id').single();if(pe){await sb.storage.from('sightings').remove([path]);throw pe;}
   p.storagePath=path;p.cloudPhotoId=pr.id;return p;
 }
 async function cloudSaveSighting(s){
   if(!session)throw new Error('Not signed in.');if(!/^[0-9a-f-]{36}$/i.test(String(s.id)))s.id=crypto.randomUUID();
   const payload={id:s.id,user_id:session.user.id,generation_id:generationIdFor(s),variant_id:variantIdFor(s),variant_text:(s.car&&s.variant&&!variantIdFor(s))?s.variant:null,partial_make:s.partial?.make||null,partial_model:s.partial?.model||null,partial_trim:s.partial?.trim||null,partial_year:cleanIdentityYear(s.partial?.year),identity_status:s.car?'IDENTIFIED':(s.partial?'PARTIAL':'UNKNOWN'),context:s.context,source:s.source,region_code:'CA-ON',captured_at:s.at||new Date().toISOString()};
-  const {error}=await sb.from('sightings').insert(payload);if(error)throw error;
+  const {error}=await sb.from('sightings').upsert(payload,{onConflict:'id',ignoreDuplicates:true});if(error)throw error;
   for(let i=0;i<getPhotos(s).length;i++)await cloudUploadPhoto(s,s.photos[i],i);
-  if(s.tags?.length){const {error:te}=await sb.from('sighting_tags').insert(s.tags.map(tag=>({sighting_id:s.id,tag})));if(te)throw te;}
+  if(s.tags?.length){const {error:te}=await sb.from('sighting_tags').upsert(s.tags.map(tag=>({sighting_id:s.id,tag})),{onConflict:'sighting_id,tag',ignoreDuplicates:true});if(te)throw te;}
   s.user_id=session.user.id;return s;
 }
 async function cloudUpdateSighting(s){
